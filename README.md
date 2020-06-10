@@ -1,13 +1,9 @@
-```html
 <p align="center">
-    <img src="\Graphics\TextLogo.png" alt="piTime"/>
+    <img alt="piTime" src="\Graphics\TextLogo.png"/> <br/>
     <i>Fully customisavle timer and countdown for streamers. <br/>
-    Free, simple, and lightweight.</i>
+    Free, simple, and lightweight.</i><br/>
+    <img alt="Status Badge" src="https://img.shields.io/badge/Status-not%20released%20yet-red?style=flat-square"/>
+    <img alt="HitCount" src="http://hits.dwyl.com/RealA10N/piTime.svg"/>
 </p>
-```
-
-![Status Badge](https://img.shields.io/badge/Status-not%20released%20yet-red?style=flat-square)
-![HitCount](http://hits.dwyl.com/RealA10N/piTime.svg)(http://hits.dwyl.com/RealA10N/piTime)
-
 ---
 
