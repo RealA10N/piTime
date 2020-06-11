@@ -1,5 +1,4 @@
-
-function add_all_parameters() {
+function show_debug_params(urlParams) {
     /* Creates the text in the developer tool window. */
 
     var params = 0;
@@ -34,4 +33,4 @@ function add_parameter(stat_name) {
 }
 
 const urlParams = new URLSearchParams(window.location.search);
-add_all_parameters();
+show_debug_params(urlParams);
