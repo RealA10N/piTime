@@ -1,0 +1,19 @@
+{
+    "@metadata": {
+        "message-documentation": "qqq.json",
+        "locate": "en",
+        "authors": [
+            "RealA10N"
+        ]
+    },
+    
+    "en": {
+        
+        "piTime-no-css-1": "Hi! Seems like you didn't apply the CSS code to customize your timer",
+        "piTime-no-css-2": "Head over to {url} to design your timer!"
+
+    },
+
+    "he": "he.json"
+    
+}
