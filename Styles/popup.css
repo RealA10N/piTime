@@ -18,6 +18,7 @@
     border-left: 5px solid var(--color);
 
     box-shadow: 10px 10px 30px 0px rgba(0,0,0,0.3);
+    border-radius: 5px;
 
 }
 
@@ -27,9 +28,10 @@
    ========================== */
 
 #no-css {
+    --color: rgb(252, 170, 19);
     --bg-color: rgb(245, 243, 156);
 }
 
 #dev-tool {
-    --color: rgb(252, 170, 19);
+    --color: rgb(8, 190, 236);
 }
