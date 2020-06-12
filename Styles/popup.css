@@ -1,18 +1,31 @@
+
+/* Popups are elements that normally do not appear to the end user.
+ * Popups can be warnings, tools for developers, etc.
+ * The css code that is given to the user to put in his streaming
+ * software includes the line '.popup {display: none;}' to hide
+ * all possible popups.
+ */
+
 :root {
+
+    /* Color of the line that appears on the side of the popup
+     * Usually, warning popups will be red or orange, while
+     * popups for developers will be blue for example. */
     --color: rgb(89,237,36,1);
+    
+    /* The deafult background color of each popup. */
     --bg-color: rgb(235, 235, 235);
 }
 
 
-/* ==========================
-   | Default popup          |
-   ========================== */
+/* ========================== *
+ * | Default popup          | *
+ * ========================== */
 
 .popup {
     
-    font-family: 'Quicksand', sans-serif;
     padding: 10px;
-    margin: 20px;
+    margin: 25px;
 
     background: var(--bg-color);
     border-left: 5px solid var(--color);
@@ -23,9 +36,9 @@
 }
 
 
-/* ==========================
-   | Different style popups |
-   ========================== */
+/* ========================== *
+ * | Different style popups | *
+ * ========================== */
 
 #no-css {
     --color: rgb(252, 170, 19);
