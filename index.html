@@ -2,27 +2,33 @@
 
 <html>
     <head>
-        
+
+        <meta charset="utf-8">
         <title> piTime </title>
         <link rel="shortcut icon" type="image/png"
             href="Graphics/Logo.png"/>
 
+        <!-- Scripts -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="scripts/jquery.i18n.js"></script>
+        <script src="scripts/jquery.i18n.messagestore.js"></script>
+        <script src="scripts/load.lang.js"></script>
 
         <!-- Style Sheets -->
         <link rel="stylesheet" href="Styles/style.css">
         <link rel="stylesheet" href="Styles/popup.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap">
 
     </head>
 
-    <body>
+    <body id='body'>
 
-        <div id="no-css" class="popup">
-            Hi! Seems like you didn't apply the CSS code to customize your timer. <br/>
-        </div>
+        <div id="no-css" class="popup"></div>
 
         <div id="dev-tool" class="popup">
-            <strong>Developer Tool</strong>
+            <h1 data-i18n="piTime-dev-tool-title"></h1>
+            <hr/>
+            <h2 data-i18n="piTime-parameters-title"></h2>
         </div>
 
         <script src="scripts/script.js"></script>
