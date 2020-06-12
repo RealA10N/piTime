@@ -1,6 +1,10 @@
 {
 
+    "lang-dir": "The writing direction of the language. Should be 'rtl' (right-to-left) or 'ltr' (left-to-right) only",
+
     "piTime-no-css-1": "Shown when loading the timer without any css (first row)",
-    "piTime-no-css-2": "Shown when loading the timer without any css (second row)"
+    "piTime-no-css-2": "Shown when loading the timer without any css (second row). Use `$1` insted of the link to the time (check en.json for reference)",
+    "piTime-dev-tool-title": "The title shown in the 'developer tool' popup",
+    "piTime-parameters-title": "The title of the url parameters, shown in the 'developer tool' popup"
     
 }
