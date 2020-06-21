@@ -1,6 +1,9 @@
+* {
+    font-family: "Varela Round", sans-serif;
+}
+
 body {
     background-color: rgb(236, 245, 252);
-    font-family: 'Varela Round', sans-serif;
 }
 
 hr {
