@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+
+:root {
+    --dark-color: #303030;
+    --bright-color: #ffffff;
+    --bright-hover-color: #c7c7c7;
+
+    --main-color: #54ed25;
+    --accent-color: #eaf005;
+
+    --main-gradient: linear-gradient(
+        25deg,
+        var(--main-color) 0%,
+        var(--accent-color) 100%
+    );
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Varela Round", sans-serif;
+}
+
+#navbar {
+    position: sticky;
+    top: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    background-color: var(--dark-color);
+    width: 100%;
+    height: 4em;
+    z-index: 1;
+}
+
+#logo img {
+    width: 2em;
+    transform: rotate(0deg);
+    transition: 0.5s;
+}
+
+#logo:hover img {
+    transform: rotate(360deg);
+}
+
+#nav {
+    position: relative;
+    display: flex;
+    justify-content: right;
+    list-style: none;
+    padding-left: 1em;
+    margin-left: 0em;
+}
+
+#nav a {
+    color: var(--bright-color);
+    margin: 1em;
+    text-decoration: none;
+    letter-spacing: 1px;
+
+    transition: 0.3s;
+}
+
+#nav a:hover {
+    color: var(--bright-hover-color);
+}
+
+#banner {
+    position: relative;
+    background: var(--main-gradient);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    overflow: hidden;
+}
+
+#banner #hourglass-logo {
+    font-size: 110vh;
+    color: var(--bright-color);
+
+    position: absolute;
+    left: -25vh;
+    top: -2.5vh;
+}
+
+#banner #banner-text {
+    position: absolute;
+    left: 50%;
+    width: 50%;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+
+    color: var(--bright-color);
+}
+
+#banner hr {
+    border: 0;
+    height: 1px;
+    background: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(255, 255, 255, 0) 100%
+    );
+}
+
+#banner #pitime-logo {
+    width: 25em;
+}

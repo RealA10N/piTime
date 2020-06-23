@@ -2,36 +2,60 @@
 
 <html>
     <head>
+        <meta charset="utf-8" />
+        <title>
+            piTime: Fully customizable timer and countdown for streamers.
+        </title>
+        <link
+            rel="shortcut icon"
+            type="image/png"
+            href="design/favicon128.png"
+        />
 
-        <meta charset="utf-8">
-        <title> piTime </title>
-        <link rel="shortcut icon" type="image/png"
-            href="Graphics/Logo.png"/>
+        <!-- Style Sheets -->
+        <link rel="stylesheet" href="style/style.css" />
 
         <!-- Scripts -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="scripts/jquery.i18n.js"></script>
-        <script src="scripts/jquery.i18n.messagestore.js"></script>
-        <script src="scripts/load.lang.js"></script>
+        <script src="js/jquery.i18n/jquery.i18n.js"></script>
+        <script src="js/jquery.i18n/jquery.i18n.messagestore.js"></script>
+        <script src="js/load_i18n.js"></script>
 
-        <!-- Style Sheets -->
-        <link rel="stylesheet" href="Styles/style.css">
-        <link rel="stylesheet" href="Styles/popup.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap">
-
+        <script
+            src="https://kit.fontawesome.com/f752b6d1d8.js"
+            crossorigin="anonymous"
+        ></script>
     </head>
 
-    <body id='body'>
-
-        <div id="no-css" class="popup"></div>
-
-        <div id="dev-tool" class="popup">
-            <h1 data-i18n="piTime-dev-tool-title"></h1>
-            <hr/>
-            <h2 data-i18n="piTime-parameters-title"></h2>
+    <body>
+        <div id="banner">
+            <div id="banner-text">
+                <div id="banner-text-container">
+                    <img
+                        id="pitime-logo"
+                        src="../design/pitimewhitetext.png"
+                        alt="piTime"
+                    />
+                    <hr />
+                    <span data-i18n="banner-text-1"></span><br />
+                    <span data-i18n="banner-text-2"></span><br />
+                </div>
+            </div>
+            <i class="fas fa-hourglass-half" id="hourglass-logo"></i>
         </div>
 
-        <script src="scripts/script.js"></script>
+        <div id="navbar">
+            <a href="#" id="logo"
+                ><img src="../design/favicon128.png" alt="Logo"
+            /></a>
+            <ul id="nav">
+                <li><a href="#about" data-i18n="navbar-about"></a></li>
+                <li><a href="#design" data-i18n="navbar-design"></a></li>
+            </ul>
+        </div>
 
+        <div id="about"></div>
+
+        <div id="design"></div>
     </body>
 </html>

@@ -1,10 +1,9 @@
 {
+    "lang-dir": "The writing direction of the language. Should be 'rtl' (right-to-left) or 'ltr' (left-to-right).",
 
-    "lang-dir": "The writing direction of the language. Should be 'rtl' (right-to-left) or 'ltr' (left-to-right) only",
+    "navbar-about": "Appears in the navigation bar on the top of the page. when clicked, redirects to the about section",
+    "navbar-design": "Appears in the navigation bar on the top of the page. when clicked, redirects to the design section",
 
-    "piTime-no-css-1": "Shown when loading the timer without any css (first row)",
-    "piTime-no-css-2": "Shown when loading the timer without any css (second row). Use `$1` insted of the link to the time (check en.json for reference)",
-    "piTime-dev-tool-title": "The title shown in the 'developer tool' popup",
-    "piTime-parameters-title": "The title of the url parameters, shown in the 'developer tool' popup"
-    
+    "banner-text-1": "Appears below the 'piTime' logo in the home page. First line",
+    "banner-text-2": "Appears below the 'piTime' logo in the home page. Second line"
 }

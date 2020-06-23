@@ -1,17 +1,14 @@
 {
-
     "@metadata": {
         "message-documentation": "qqq.json",
-        "locate": "he",
-        "authors": [
-            "RealA10N"
-        ]
+        "authors": ["RealA10N"]
     },
 
     "lang-dir": "rtl",
 
-    "piTime-no-css-1": "נראה כי לא החלת את קוד ה-CSS כדי להתאים אישית את הטיימר שלך.",
-    "piTime-no-css-2": "עבור אל $1 כדי לעצב את הטיימר!",
-    "piTime-dev-tool-title": "כלי למפתחים",
-    "piTime-parameters-title": "פרמטרים"
+    "navbar-about": "מה זה piTime?",
+    "navbar-design": "התחל לעצב!",
+
+    "banner-text-1": "כלי לעיצוב טיימר אישי עבור סטרימרים",
+    "banner-text-2": "פשוט, בעל אלפי אפשרויות עיצוב שונות, ולא מעמיס על המחשב"
 }

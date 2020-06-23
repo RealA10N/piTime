@@ -1,18 +1,14 @@
 {
-    
     "@metadata": {
         "message-documentation": "qqq.json",
-        "locate": "en",
-        "authors": [
-            "RealA10N"
-        ]
+        "authors": ["RealA10N"]
     },
 
     "lang-dir": "ltr",
 
-    "piTime-no-css-1": "Seems like you didn't apply the CSS code to customize your timer.",
-    "piTime-no-css-2": "Head over to $1 to design your timer!",
-    "piTime-dev-tool-title": "Developer tool",
-    "piTime-parameters-title": "Parameters"
-    
+    "navbar-about": "What's piTime?",
+    "navbar-design": "Design your own!",
+
+    "banner-text-1": "Fully customizable timer and countdown for streamers",
+    "banner-text-2": "Emphasizes simplicity, creativity, and very low processing power"
 }
