@@ -6,6 +6,7 @@
     <img alt="Status Badge" src="https://img.shields.io/badge/Status-not%20released%20yet-red?style=flat-square"/>
     <img alt="HitCount" src="http://hits.dwyl.com/RealA10N/piTime.svg"/>
 </p>
+
 ## Translate
 
 The best way to support my project is by translating it to your local language! It takes only about 20 minutes, and it helps to spread the project a ton. So, you are in? Great! here are the steps you need to follow:
