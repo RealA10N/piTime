@@ -5,16 +5,11 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="210.00008mm"
-   height="63.224033mm"
-   viewBox="0 0 210.00008 63.224033"
-   version="1.1"
    id="svg8"
-   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
-   sodipodi:docname="piTimeWhiteText.svg">
+   version="1.1"
+   viewBox="0 0 210.00008 63.224033"
+   height="63.224033mm"
+   width="210.00008mm">
   <defs
      id="defs2">
     <style
@@ -25,36 +20,6 @@
       }
     </style>
   </defs>
-  <sodipodi:namedview
-     id="base"
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1"
-     inkscape:pageopacity="1"
-     inkscape:pageshadow="2"
-     inkscape:zoom="0.6757691"
-     inkscape:cx="399.0341"
-     inkscape:cy="344.11232"
-     inkscape:document-units="mm"
-     inkscape:current-layer="layer1"
-     inkscape:document-rotation="0"
-     showgrid="false"
-     inkscape:snap-page="false"
-     inkscape:snap-grids="true"
-     inkscape:snap-to-guides="true"
-     inkscape:pagecheckerboard="true"
-     borderlayer="false"
-     inkscape:window-width="1920"
-     inkscape:window-height="1027"
-     inkscape:window-x="1912"
-     inkscape:window-y="100"
-     inkscape:window-maximized="1">
-    <inkscape:grid
-       type="xygrid"
-       id="grid852"
-       originx="213.10487"
-       originy="43.849616" />
-  </sodipodi:namedview>
   <metadata
      id="metadata5">
     <rdf:RDF>
@@ -63,43 +28,23 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <g
-     inkscape:label="piTime text"
-     inkscape:groupmode="layer"
-     id="layer1"
+     transform="translate(-1.4379621e-6,-0.56723519)"
      style="display:inline"
-     transform="translate(-1.4379621e-6,-0.56723519)">
+     id="layer1">
     <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:68.4732px;line-height:1.25;font-family:sans-serif;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.267198;stroke-miterlimit:4;stroke-dasharray:none"
-       x="-3.6777582"
+       id="text12"
        y="51.052845"
-       id="text12"><tspan
-         sodipodi:role="line"
-         id="tspan10"
-         x="-3.6777582"
+       x="-3.6777582"
+       style="font-style:normal;font-weight:normal;font-size:68.4732px;line-height:1.25;font-family:sans-serif;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.267198;stroke-miterlimit:4;stroke-dasharray:none"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:68.4732px;font-family:'Typo Grotesk Rounded';-inkscape-font-specification:'Typo Grotesk Rounded';fill:#ffffff;fill-opacity:1;stroke-width:0.267198;stroke-miterlimit:4;stroke-dasharray:none"
          y="51.052845"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:68.4732px;font-family:'Typo Grotesk Rounded';-inkscape-font-specification:'Typo Grotesk Rounded';fill:#ffffff;fill-opacity:1;stroke-width:0.267198;stroke-miterlimit:4;stroke-dasharray:none">piTime</tspan></text>
-  </g>
-  <g
-     inkscape:groupmode="layer"
-     id="layer2"
-     inkscape:label="Icon"
-     style="display:none"
-     transform="translate(-1.4379621e-6,-0.56723519)">
-    <image
-       sodipodi:absref="F:\Projects\piTime\Program\design\TextLogo.png"
-       xlink:href="TextLogo.png"
-       style="display:inline"
-       y="-36.28363"
-       x="-124.14153"
-       width="351.31702"
-       height="136.17741"
-       preserveAspectRatio="none"
-       id="image875" />
+         x="-3.6777582"
+         id="tspan10">piTime</tspan></text>
   </g>
 </svg>
