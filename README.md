@@ -15,7 +15,7 @@ The best way to support my project is by translating it to your local language! 
 
 2. Open the [i18n](/i18n) folder. This folder is the folder containing all the translation files of the project!
 
-3. If your language isn't listed in the [languages.json](/i18n/languages.json) file, add it! Please use the [language code standard](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes).
+3. If your language isn't listed in the [languages.json](/i18n/languages.json) file, add it! Please use the [language code standard](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes), and add the language name and the language direction ("ltr" for left-to-right, "rtl" for right-to-left).
 
 4. Open the json file that corresponds to your local language ([en.json](i18n/en.json) for example). If this file doesn't exist, copy [en.json](i18n/en.json), change his name and start translating!
 

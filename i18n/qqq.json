@@ -1,9 +1,11 @@
 {
     "lang-dir": "The writing direction of the language. Should be 'rtl' (right-to-left) or 'ltr' (left-to-right).",
 
-    "navbar-about": "Appears in the navigation bar on the top of the page. when clicked, redirects to the about section",
-    "navbar-design": "Appears in the navigation bar on the top of the page. when clicked, redirects to the design section",
-
     "banner-text-1": "Appears below the 'piTime' logo in the home page. First line",
-    "banner-text-2": "Appears below the 'piTime' logo in the home page. Second line"
+    "banner-text-2": "Appears below the 'piTime' logo in the home page. Second line",
+    "banner-design-button": "Appears on the button that redirects the user to the design section.",
+
+    "about-title": "The title of the about section.",
+
+    "design-title": "The title of the design section."
 }

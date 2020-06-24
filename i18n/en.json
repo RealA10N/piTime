@@ -6,9 +6,11 @@
 
     "lang-dir": "ltr",
 
-    "navbar-about": "What's piTime?",
-    "navbar-design": "Design your own!",
-
     "banner-text-1": "Fully customizable timer and countdown for streamers",
-    "banner-text-2": "Emphasizes simplicity, creativity, and very low processing power"
+    "banner-text-2": "Emphasizes simplicity, creativity, and very low processing power",
+    "banner-design-button": "Design your own!",
+
+    "about-title": "What's piTime?",
+
+    "design-title": "Design your own"
 }

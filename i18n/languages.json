@@ -1,4 +1,11 @@
 {
-    "en": "English",
-    "he": "עברית"
+    "en": {
+        "name": "English",
+        "direction": "ltr"
+    },
+
+    "he": {
+        "name": "עברית",
+        "direction": "rtl"
+    }
 }

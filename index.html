@@ -14,48 +14,54 @@
 
         <!-- Style Sheets -->
         <link rel="stylesheet" href="style/style.css" />
+        <script
+            src="https://kit.fontawesome.com/f752b6d1d8.js"
+            crossorigin="anonymous"
+        ></script>
 
         <!-- Scripts -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="js/jquery.i18n/jquery.i18n.js"></script>
         <script src="js/jquery.i18n/jquery.i18n.messagestore.js"></script>
         <script src="js/load_i18n.js"></script>
-
-        <script
-            src="https://kit.fontawesome.com/f752b6d1d8.js"
-            crossorigin="anonymous"
-        ></script>
     </head>
 
     <body>
-        <div id="banner">
+        <div id="banner" class="section">
+            <div id="lang-selector">
+                <i class="fas fa-globe-africa"></i>
+                <select id="lang"></select>
+            </div>
+
             <div id="banner-text">
                 <div id="banner-text-container">
                     <img
                         id="pitime-logo"
-                        src="design/pitimewhitetext.png"
+                        src="design/piTimeWhiteText.svg"
                         alt="piTime"
-                    />
+                    /><br />
                     <hr />
                     <span data-i18n="banner-text-1"></span><br />
                     <span data-i18n="banner-text-2"></span><br />
+
+                    <a
+                        id="design-btn"
+                        class="light-btn"
+                        href="#design"
+                        data-i18n="banner-design-button"
+                    ></a>
                 </div>
             </div>
+
             <i class="fas fa-hourglass-half" id="hourglass-logo"></i>
         </div>
 
-        <div id="navbar">
-            <a href="#" id="logo"
-                ><img src="design/favicon128.png" alt="Logo"
-            /></a>
-            <ul id="nav">
-                <li><a href="#about" data-i18n="navbar-about"></a></li>
-                <li><a href="#design" data-i18n="navbar-design"></a></li>
-            </ul>
+        <div id="about" class="section">
+            <h1 data-i18n="about-title"></h1>
         </div>
 
-        <div id="about"></div>
-
-        <div id="design"></div>
+        <div id="design" class="section">
+            <h1 data-i18n="design-title"></h1>
+        </div>
     </body>
 </html>
