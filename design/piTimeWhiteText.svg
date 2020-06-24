@@ -8,13 +8,13 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   sodipodi:docname="textLogoWhiteSvg.svg"
-   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
-   id="svg8"
-   version="1.1"
-   viewBox="0 0 210.00008 63.224033"
+   width="210.00008mm"
    height="63.224033mm"
-   width="210.00008mm">
+   viewBox="0 0 210.00008 63.224033"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   sodipodi:docname="piTimeWhiteText.svg">
   <defs
      id="defs2">
     <style
@@ -26,34 +26,34 @@
     </style>
   </defs>
   <sodipodi:namedview
-     inkscape:window-maximized="0"
-     inkscape:window-y="132"
-     inkscape:window-x="2072"
-     inkscape:window-height="1011"
-     inkscape:window-width="1904"
-     borderlayer="false"
-     inkscape:pagecheckerboard="true"
-     inkscape:snap-to-guides="true"
-     inkscape:snap-grids="true"
-     inkscape:snap-page="false"
-     showgrid="false"
-     inkscape:document-rotation="0"
-     inkscape:current-layer="layer1"
-     inkscape:document-units="mm"
-     inkscape:cy="344.11232"
-     inkscape:cx="451.56684"
-     inkscape:zoom="0.69390526"
-     inkscape:pageshadow="2"
-     inkscape:pageopacity="1"
-     borderopacity="1"
-     bordercolor="#666666"
+     id="base"
      pagecolor="#ffffff"
-     id="base">
+     bordercolor="#666666"
+     borderopacity="1"
+     inkscape:pageopacity="1"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.6757691"
+     inkscape:cx="399.0341"
+     inkscape:cy="344.11232"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     inkscape:snap-page="false"
+     inkscape:snap-grids="true"
+     inkscape:snap-to-guides="true"
+     inkscape:pagecheckerboard="true"
+     borderlayer="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1027"
+     inkscape:window-x="1912"
+     inkscape:window-y="100"
+     inkscape:window-maximized="1">
     <inkscape:grid
-       originy="43.849616"
-       originx="213.10487"
+       type="xygrid"
        id="grid852"
-       type="xygrid" />
+       originx="213.10487"
+       originy="43.849616" />
   </sodipodi:namedview>
   <metadata
      id="metadata5">
@@ -63,36 +63,36 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <g
-     transform="translate(-1.4379621e-6,-0.56723519)"
-     style="display:inline"
-     id="layer1"
+     inkscape:label="piTime text"
      inkscape:groupmode="layer"
-     inkscape:label="piTime text">
+     id="layer1"
+     style="display:inline"
+     transform="translate(-1.4379621e-6,-0.56723519)">
     <text
-       id="text12"
-       y="51.052845"
-       x="-3.6777582"
+       xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:68.4732px;line-height:1.25;font-family:sans-serif;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.267198;stroke-miterlimit:4;stroke-dasharray:none"
-       xml:space="preserve"><tspan
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:68.4732px;font-family:'Typo Grotesk Rounded';-inkscape-font-specification:'Typo Grotesk Rounded';fill:#ffffff;fill-opacity:1;stroke-width:0.267198;stroke-miterlimit:4;stroke-dasharray:none"
-         y="51.052845"
-         x="-3.6777582"
+       x="-3.6777582"
+       y="51.052845"
+       id="text12"><tspan
+         sodipodi:role="line"
          id="tspan10"
-         sodipodi:role="line">piTime</tspan></text>
+         x="-3.6777582"
+         y="51.052845"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:68.4732px;font-family:'Typo Grotesk Rounded';-inkscape-font-specification:'Typo Grotesk Rounded';fill:#ffffff;fill-opacity:1;stroke-width:0.267198;stroke-miterlimit:4;stroke-dasharray:none">piTime</tspan></text>
   </g>
   <g
-     transform="translate(-1.4379621e-6,-0.56723519)"
-     style="display:none"
-     inkscape:label="Icon"
+     inkscape:groupmode="layer"
      id="layer2"
-     inkscape:groupmode="layer">
+     inkscape:label="Icon"
+     style="display:none"
+     transform="translate(-1.4379621e-6,-0.56723519)">
     <image
-       sodipodi:absref="F:\Projects\piTime\TextLogo.png"
+       sodipodi:absref="F:\Projects\piTime\Program\design\TextLogo.png"
        xlink:href="TextLogo.png"
        style="display:inline"
        y="-36.28363"

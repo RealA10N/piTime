@@ -1,7 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
 @font-face {
-    font-family: TypoGroteskRounded;
+    font-family: Typo Grotesk Rounded;
     src: url(/style/TypoGroteskRounded.otf);
 }
 
@@ -35,7 +34,7 @@ html {
 body {
     margin: 0;
     padding: 0;
-    font-family: "Varela Round", sans-serif;
+    font-family: "Rubik", sans-serif;
 }
 
 .section {
@@ -99,6 +98,11 @@ body {
 #banner #lang {
     margin: 0.5em;
     appearance: none;
+}
+
+#banner #piTime-text {
+    font-family: Typo Grotesk Rounded;
+    font-size: 200px;
 }
 
 #banner #hourglass-logo {
