@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
 @font-face {
     font-family: Typo Grotesk Rounded;
-    src: url(/style/TypoGroteskRounded.otf);
+    src: url(style/TypoGroteskRounded.otf);
 }
 
 :root {
