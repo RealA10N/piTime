@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
 
+@font-face {
+    font-family: TypoGroteskRounded;
+    src: url(/style/TypoGroteskRounded.otf);
+}
+
 :root {
     --dark-color: #303030;
     --bright-color: #ffffff;
