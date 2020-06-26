@@ -1,6 +1,4 @@
 {
-    "lang-dir": "The writing direction of the language. Should be 'rtl' (right-to-left) or 'ltr' (left-to-right).",
-
     "banner-text-1": "Appears below the 'piTime' logo in the home page. First line",
     "banner-text-2": "Appears below the 'piTime' logo in the home page. Second line",
     "banner-design-button": "Appears on the button that redirects the user to the design section.",
