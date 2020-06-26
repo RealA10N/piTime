@@ -98,6 +98,7 @@
 #banner #banner-text #piTime-text {
   font-family: Typo Grotesk Rounded;
   font-size: 200px;
+  font-weight: normal;
 }
 
 #banner #banner-text hr {
@@ -188,6 +189,45 @@
   background-color: #ffffff;
   color: #303030;
   height: 75vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#about #clock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+#about #clock h3 {
+  /* Hours and minutes */
+  font-family: Typo Grotesk Rounded;
+  font-size: 20vh;
+  position: relative;
+  line-height: 80%;
+}
+
+#about #clock h4 {
+  /* Seconds */
+  color: #303030;
+  opacity: 0.25;
+  font-size: 5vh;
 }
 
 #design {

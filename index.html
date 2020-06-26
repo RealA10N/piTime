@@ -20,14 +20,17 @@
             async
         ></script>
 
-        <!-- Scripts -->
+        <!-- Modules -->
         <script
             src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
             defer
         ></script>
         <script src="js/jquery.i18n/jquery.i18n.js" defer></script>
         <script src="js/jquery.i18n/jquery.i18n.messagestore.js" defer></script>
+        
+        <!-- JS Scripts -->
         <script src="js/load_i18n.js" defer></script>
+        <script src="js/about_clock.js" defer></script>
     </head>
 
     <body>
@@ -42,7 +45,7 @@
 
             <div id="banner-text">
                 <div id="banner-text-container">
-                    <span id="piTime-text">piTime</span><br />
+                    <h1 id="piTime-text">piTime</h1>
                     <hr />
                     <span data-i18n="banner-text-1"></span><br />
                     <span data-i18n="banner-text-2"></span><br />
@@ -60,11 +63,15 @@
         </div>
 
         <div id="about" class="section">
-            <h1 data-i18n="about-title"></h1>
+            <div id="clock">
+                <h3 id="hours"></h3>
+                <h3 id="minutes"></h3>
+                <h4 id="seconds"></h4>
+            </div>
         </div>
 
         <div id="design" class="section">
-            <h1 data-i18n="design-title"></h1>
+            <h2 data-i18n="design-title"></h1>
         </div>
     </body>
 </html>

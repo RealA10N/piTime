@@ -2,4 +2,28 @@
     background-color: $light-color;
     color: $dark-color;
     height: $about-section-height;
+
+    flex-direction: column;
+
+    #clock {
+        @include center;
+        flex-direction: column;
+        user-select: none;
+
+        h3 {
+            /* Hours and minutes */
+            font-family: Typo Grotesk Rounded;
+            font-size: 20vh;
+
+            position: relative;
+            line-height: 80%;
+        }
+
+        h4 {
+            /* Seconds */
+            color: $dark-color;
+            opacity: 0.25;
+            font-size: 5vh;
+        }
+    }
 }
