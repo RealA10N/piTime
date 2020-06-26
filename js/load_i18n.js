@@ -19,25 +19,26 @@ function load_i18n(lang) {
             $("body").i18n();
         });
 
-    // Update direction of text on the page
     $.getJSON(LANG_JSON_PATH, function (json_data) {
+        // Update direction of text on the page
         $("body")[0].style.direction = json_data[lang]["direction"];
+
+        // Update the text of the language selector to show the selecter language
+        $("#cur-lang").text(json_data[lang]["name"]);
     });
 }
 
 function load_lang_selector() {
     $.getJSON(LANG_JSON_PATH, function (json_data) {
-        LangSelector = $("#lang");
+        LangList = $("#lang-list");
+
+        console.log(LangList);
 
         for (let [lang_code, lang_dict] of Object.entries(json_data)) {
-            LangSelector.append(
-                `<option value='${lang_code}'>${lang_dict["name"]}</option>`
+            LangList.append(
+                `<li><a onclick="load_i18n('${lang_code}')">${lang_dict["name"]}</a></li>`
             );
         }
-
-        LangSelector.on("change", function () {
-            load_i18n(LangSelector.val());
-        });
     });
 }
 
