@@ -32,8 +32,6 @@ function load_lang_selector() {
     $.getJSON(LANG_JSON_PATH, function (json_data) {
         LangList = $("#lang-list");
 
-        console.log(LangList);
-
         for (let [lang_code, lang_dict] of Object.entries(json_data)) {
             LangList.append(
                 `<li><a onclick="load_i18n('${lang_code}')">${lang_dict["name"]}</a></li>`
