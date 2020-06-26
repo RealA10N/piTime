@@ -1,0 +1,92 @@
+#banner {
+    background: $main-gradient;
+    color: $light-color;
+    height: $banner-section-height;
+
+    position: relative;
+    background-size: cover;
+    overflow: hidden;
+
+    #lang-selector {
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 1;
+
+        margin: 1em;
+        color: $dark-color;
+
+        #lang {
+            margin: 0.5em;
+        }
+    }
+
+    #banner-text {
+        position: absolute;
+        width: 100%;
+        height: $banner-section-height;
+
+        @include center;
+
+        font-size: 20px;
+
+        animation: logoFadeIn 1s;
+
+        #piTime-text {
+            font-family: Typo Grotesk Rounded;
+            font-size: 200px;
+        }
+
+        hr {
+            border: 0;
+            height: 1px;
+            margin: 10px 0 10px;
+            background: rgba(255, 255, 255, 0.5);
+        }
+
+        #design-btn {
+            margin: 1em 0 0;
+        }
+    }
+
+    #hourglass-logo {
+        font-size: 110vh;
+
+        position: absolute;
+        left: -25vh;
+        top: -7.5vh;
+
+        animation: hourglassFadeIn 5s;
+        opacity: 0.3;
+        display: inline;
+    }
+}
+
+@keyframes hourglassFadeIn {
+    0% {
+        opacity: 0;
+        transform: translate(-75px, 200px);
+    }
+
+    50% {
+        opacity: 0;
+        transform: translate(-75px, 200px);
+    }
+
+    100% {
+        opacity: 0.3;
+        transform: translate(0px, 0px);
+    }
+}
+
+@keyframes logoFadeIn {
+    from {
+        opacity: 0;
+        transform: rotateX(90deg);
+    }
+
+    to {
+        opacity: 100;
+        transform: rotateX(0deg);
+    }
+}

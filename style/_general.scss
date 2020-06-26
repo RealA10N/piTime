@@ -1,0 +1,17 @@
+$light-color: #ffffff;
+$dark-color: #303030;
+
+$main-color: #54ed25;
+$accent-color: #eaf005;
+
+$main-gradient: linear-gradient(25deg, $main-color 0%, $accent-color 100%);
+
+$banner-section-height: 100vh;
+$about-section-height: 75vh;
+$design-section-height: 100vh;
+
+@mixin center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
