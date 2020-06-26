@@ -1,261 +1,251 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
 @font-face {
-    font-family: Typo Grotesk Rounded;
-    src: url(TypoGroteskRounded.otf);
+  font-family: Typo Grotesk Rounded;
+  src: url(TypoGroteskRounded.otf);
 }
 
 #banner {
-    background: linear-gradient(25deg, #54ed25 0%, #eaf005 100%);
-    color: #ffffff;
-    height: 100vh;
-    position: relative;
-    background-size: cover;
-    overflow: hidden;
+  background: linear-gradient(25deg, #54ed25 0%, #eaf005 100%);
+  color: #ffffff;
+  height: 100vh;
+  position: relative;
+  background-size: cover;
+  overflow: hidden;
 }
 
 #banner #lang-selector {
-    position: absolute;
-    right: 0;
-    top: 0;
-    z-index: 1;
-    margin: 1em;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+  margin: 1em;
 }
 
 #banner #lang-selector button {
-    background: none;
-    border: none;
-    color: #303030;
-    font-size: 20px;
-    cursor: pointer;
+  background: none;
+  border: none;
+  color: #303030;
+  font-size: 20px;
+  cursor: pointer;
 }
 
 #banner #lang-selector button i {
-    padding: 5px;
+  padding: 5px;
 }
 
 #banner #lang-selector button:focus + #lang-list {
-    opacity: 1;
-    pointer-events: all;
-    -webkit-transform: translateY(0px);
-    transform: translateY(0px);
+  opacity: 1;
+  pointer-events: all;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
 }
 
 #banner #lang-selector ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    position: absolute;
-    right: 0;
-    width: 150%;
-    margin-top: 1em;
-    background-color: #ffffff;
-    color: #303030;
-    border-radius: 5px;
-    opacity: 0;
-    -webkit-transform: translateY(-10px);
-    transform: translateY(-10px);
-    -webkit-transition: all 0.4s ease;
-    transition: all 0.4s ease;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  right: 0;
+  width: 150%;
+  margin-top: 1em;
+  background-color: #ffffff;
+  color: #303030;
+  border-radius: 5px;
+  opacity: 0;
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
 
 #banner #lang-selector ul li {
-    padding: 10px;
-    list-style-type: none;
-    cursor: pointer;
+  margin: 10px;
+  list-style-type: none;
+  cursor: pointer;
 }
 
 #banner #lang-selector ul li a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 #banner #banner-text {
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    font-size: 20px;
-    -webkit-animation: logoFadeIn 1s;
-    animation: logoFadeIn 1s;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 20px;
+  -webkit-animation: logoFadeIn 1s;
+          animation: logoFadeIn 1s;
 }
 
 #banner #banner-text #piTime-text {
-    font-family: Typo Grotesk Rounded;
-    font-size: 200px;
+  font-family: Typo Grotesk Rounded;
+  font-size: 200px;
 }
 
 #banner #banner-text hr {
-    border: 0;
-    height: 1px;
-    margin: 10px 0 10px;
-    background: rgba(255, 255, 255, 0.5);
+  border: 0;
+  height: 1px;
+  margin: 10px 0 10px;
+  background: rgba(255, 255, 255, 0.5);
 }
 
 #banner #banner-text #design-btn {
-    margin: 1em 0 0;
+  margin: 1em 0 0;
 }
 
 #banner #hourglass-logo {
-    font-size: 110vh;
-    position: absolute;
-    left: -25vh;
-    top: -7.5vh;
-    -webkit-animation: hourglassFadeIn 5s;
-    animation: hourglassFadeIn 5s;
-    opacity: 0.3;
-    display: inline;
+  font-size: 110vh;
+  position: absolute;
+  left: -25vh;
+  top: -7.5vh;
+  -webkit-animation: hourglassFadeIn 5s;
+          animation: hourglassFadeIn 5s;
+  opacity: 0.3;
+  display: inline;
 }
 
 @-webkit-keyframes hourglassFadeIn {
-    0% {
-        opacity: 0;
-        -webkit-transform: translate(-75px, 200px);
-        transform: translate(-75px, 200px);
-    }
-    50% {
-        opacity: 0;
-        -webkit-transform: translate(-75px, 200px);
-        transform: translate(-75px, 200px);
-    }
-    100% {
-        opacity: 0.3;
-        -webkit-transform: translate(0px, 0px);
-        transform: translate(0px, 0px);
-    }
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(-75px, 200px);
+            transform: translate(-75px, 200px);
+  }
+  50% {
+    opacity: 0;
+    -webkit-transform: translate(-75px, 200px);
+            transform: translate(-75px, 200px);
+  }
+  100% {
+    opacity: 0.3;
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+  }
 }
 
 @keyframes hourglassFadeIn {
-    0% {
-        opacity: 0;
-        -webkit-transform: translate(-75px, 200px);
-        transform: translate(-75px, 200px);
-    }
-    50% {
-        opacity: 0;
-        -webkit-transform: translate(-75px, 200px);
-        transform: translate(-75px, 200px);
-    }
-    100% {
-        opacity: 0.3;
-        -webkit-transform: translate(0px, 0px);
-        transform: translate(0px, 0px);
-    }
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(-75px, 200px);
+            transform: translate(-75px, 200px);
+  }
+  50% {
+    opacity: 0;
+    -webkit-transform: translate(-75px, 200px);
+            transform: translate(-75px, 200px);
+  }
+  100% {
+    opacity: 0.3;
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+  }
 }
 
 @-webkit-keyframes logoFadeIn {
-    from {
-        opacity: 0;
-        -webkit-transform: rotateX(90deg);
-        transform: rotateX(90deg);
-    }
-    to {
-        opacity: 100;
-        -webkit-transform: rotateX(0deg);
-        transform: rotateX(0deg);
-    }
+  from {
+    opacity: 0;
+    -webkit-transform: rotateX(90deg);
+            transform: rotateX(90deg);
+  }
+  to {
+    opacity: 100;
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+  }
 }
 
 @keyframes logoFadeIn {
-    from {
-        opacity: 0;
-        -webkit-transform: rotateX(90deg);
-        transform: rotateX(90deg);
-    }
-    to {
-        opacity: 100;
-        -webkit-transform: rotateX(0deg);
-        transform: rotateX(0deg);
-    }
+  from {
+    opacity: 0;
+    -webkit-transform: rotateX(90deg);
+            transform: rotateX(90deg);
+  }
+  to {
+    opacity: 100;
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+  }
 }
 
 #about {
-    background-color: #ffffff;
-    color: #303030;
-    height: 75vh;
+  background-color: #ffffff;
+  color: #303030;
+  height: 75vh;
 }
 
 #design {
-    background-color: #303030;
-    color: #ffffff;
-    height: 100vh;
+  background-color: #303030;
+  color: #ffffff;
+  height: 100vh;
 }
 
 * {
-    /* Reset margin and padding */
-    margin: 0;
-    padding: 0;
+  /* Reset margin and padding */
+  margin: 0;
+  padding: 0;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body,
 button {
-    /* Default font */
-    font-family: "Rubik", sans-serif;
+  /* Default font */
+  font-family: "Rubik", sans-serif;
 }
 
 .section {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    width: 100%;
-    /* Shadown effect between sections */
-    background: -webkit-gradient(
-        linear,
-        left bottom,
-        left top,
-        color-stop(90%, rgba(0, 0, 0, 0)),
-        to(rgba(0, 0, 0, 0.1))
-    );
-    background: linear-gradient(
-        0deg,
-        rgba(0, 0, 0, 0) 90%,
-        rgba(0, 0, 0, 0.1) 100%
-    );
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  /* Shadown effect between sections */
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(90%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.1)));
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0) 90%, rgba(0, 0, 0, 0.1) 100%);
 }
 
 .light-btn {
-    color: #ffffff;
-    background: transparent;
-    border: 1.5px solid #ffffff;
-    text-decoration: none;
-    -webkit-transition: all 0.3s ease 0s;
-    transition: all 0.3s ease 0s;
-    border-radius: 0.5em;
-    z-index: 2;
-    padding: 0.8em;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    position: absolute;
+  color: #ffffff;
+  background: transparent;
+  border: 1.5px solid #ffffff;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  border-radius: 0.5em;
+  z-index: 2;
+  padding: 0.8em;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  position: absolute;
 }
 
 .light-btn:hover {
-    background: rgba(255, 255, 255, 0.1);
-    -webkit-box-shadow: inset 5px 5px 5px 0px rgba(0, 0, 0, 0.1);
-    box-shadow: inset 5px 5px 5px 0px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.1);
+  -webkit-box-shadow: inset 5px 5px 5px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: inset 5px 5px 5px 0px rgba(0, 0, 0, 0.1);
 }
 /*# sourceMappingURL=style.css.map */
