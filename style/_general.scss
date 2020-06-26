@@ -15,3 +15,9 @@ $design-section-height: 100vh;
     align-items: center;
     justify-content: center;
 }
+
+.section {
+    position: relative;
+    background-size: cover;
+    overflow: hidden;
+}

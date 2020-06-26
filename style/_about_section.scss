@@ -9,6 +9,7 @@
         @include center;
         flex-direction: column;
         user-select: none;
+        z-index: 2;
 
         h3 {
             /* Hours and minutes */
@@ -21,9 +22,40 @@
 
         h4 {
             /* Seconds */
-            color: $dark-color;
             opacity: 0.25;
             font-size: 5vh;
         }
+    }
+
+    #clock-logo {
+        font-size: 60vh;
+
+        position: absolute;
+        right: -10vh;
+        bottom: -10vh;
+        transform: rotate(30deg);
+
+        animation: ClockLogoFadeIn 7.5s;
+        opacity: 0.05;
+        display: inline;
+
+        z-index: 1;
+    }
+}
+
+@keyframes ClockLogoFadeIn {
+    0% {
+        opacity: 0;
+        transform: rotate(60deg);
+    }
+
+    66% {
+        opacity: 0;
+        transform: rotate(60deg);
+    }
+
+    100% {
+        opacity: 0.05;
+        transform: rotate(30deg);
     }
 }

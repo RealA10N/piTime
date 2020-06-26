@@ -4,6 +4,12 @@
   src: url(TypoGroteskRounded.otf);
 }
 
+.section {
+  position: relative;
+  background-size: cover;
+  overflow: hidden;
+}
+
 #banner {
   background: linear-gradient(25deg, #54ed25 0%, #eaf005 100%);
   color: #ffffff;
@@ -213,6 +219,7 @@
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  z-index: 2;
 }
 
 #about #clock h3 {
@@ -225,9 +232,58 @@
 
 #about #clock h4 {
   /* Seconds */
-  color: #303030;
   opacity: 0.25;
   font-size: 5vh;
+}
+
+#about #clock-logo {
+  font-size: 60vh;
+  position: absolute;
+  right: -10vh;
+  bottom: -10vh;
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
+  -webkit-animation: ClockLogoFadeIn 7.5s;
+          animation: ClockLogoFadeIn 7.5s;
+  opacity: 0.05;
+  display: inline;
+  z-index: 1;
+}
+
+@-webkit-keyframes ClockLogoFadeIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: rotate(60deg);
+            transform: rotate(60deg);
+  }
+  66% {
+    opacity: 0;
+    -webkit-transform: rotate(60deg);
+            transform: rotate(60deg);
+  }
+  100% {
+    opacity: 0.05;
+    -webkit-transform: rotate(30deg);
+            transform: rotate(30deg);
+  }
+}
+
+@keyframes ClockLogoFadeIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: rotate(60deg);
+            transform: rotate(60deg);
+  }
+  66% {
+    opacity: 0;
+    -webkit-transform: rotate(60deg);
+            transform: rotate(60deg);
+  }
+  100% {
+    opacity: 0.05;
+    -webkit-transform: rotate(30deg);
+            transform: rotate(30deg);
+  }
 }
 
 #design {
