@@ -28,14 +28,18 @@
         ></script>
         <script src="js/jquery.i18n/jquery.i18n.js" defer></script>
         <script src="js/jquery.i18n/jquery.i18n.messagestore.js" defer></script>
-        
+
         <!-- JS Scripts -->
         <script src="js/load_i18n.js" defer></script>
         <script src="js/about_clock.js" defer></script>
+        <script src="js/select_timer_mode.js" defer></script>
     </head>
 
     <body>
         <div id="banner" class="section">
+            <!-- Watermark-->
+            <i class="fas fa-hourglass-half" id="hourglass-logo"></i>
+
             <div id="lang-selector">
                 <button>
                     <i class="fas fa-globe-africa"></i>
@@ -59,11 +63,12 @@
                     ></a>
                 </div>
             </div>
-
-            <i class="fas fa-hourglass-half" id="hourglass-logo"></i>
         </div>
 
         <div id="about" class="section">
+            <!-- Watermark-->
+            <i class="fas fa-history" id="clock-logo"></i>
+
             <div id="clock">
                 <h3 id="hours"></h3>
                 <h3 id="minutes"></h3>
@@ -73,26 +78,46 @@
             <div id="text-container">
                 <p data-i18n="[html]about-desc-text"></p>
                 <p data-i18n="[html]about-github-text"></p>
-                
+
                 <a
                     id="design-btn"
                     class="dark-btn"
                     href="#design"
                     data-i18n="start-design-button"
                 ></a>
-                
             </div>
-
-            <i class="fas fa-history" id="clock-logo"></i>
-
         </div>
 
         <div id="design" class="section">
-            <h2 data-i18n="design-title"></h1>
-            
             <div id="watermarks">
                 <i class="fas fa-code" id="code-watermark"></i>
                 <i class="fas fa-cut" id="cut-watermark"></i>
+            </div>
+
+            <h1 data-i18n="design-title"></h1>
+
+            <div id="panel">
+                <div id="mode-selector">
+                    <a
+                        data-i18n="mode-selector:countdown"
+                        onclick="select_mode_countdown(this)"
+                    ></a>
+                    <a
+                        data-i18n="mode-selector:countup"
+                        onclick="select_mode_countup(this)"
+                    ></a>
+                    <a
+                        data-i18n="mode-selector:current-time"
+                        onclick="select_mode_curtime(this)"
+                    ></a>
+                </div>
+
+                <div id="preview">
+                    <h2 data-i18n="preview:title"></h2>
+                </div>
+                <div id="settings">
+                    <h2 data-i18n="settings:title"></h2>
+                </div>
             </div>
         </div>
     </body>

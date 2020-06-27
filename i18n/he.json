@@ -11,5 +11,13 @@
     "about-desc-text": "<a href='#'>piTime</a> היא תוכנה הפועלת על הדפדפן ונותנת לך את האפשרות לעצב באופן מלא טיימר לעיצוב שידורים חיים.",
     "about-github-text": "אתם יותר ממוזמנים לדווח על שגיאות ותקלות, להציע פ'צרים חדשים, או לעזור לנו לתרגם את האתר לשפה חדשה ב<a href='https://github.com/reala10n/pitime' target='_blank'>דף הGitHub של הפרוייקט!</a>",
 
-    "design-title": "עצב בעצמך!"
+    "design-title": "עצב בעצמך!",
+
+    "mode-selector:countdown": "ספירה לאחור",
+    "mode-selector:countup": "ספירה קדימה",
+    "mode-selector:current-time": "שעון נוכחי",
+
+    "preview:title": "תצוגה מקדימה",
+
+    "settings:title": "הגדרות"
 }

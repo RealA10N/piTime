@@ -11,5 +11,13 @@
     "about-desc-text": "<a href='#'>piTime</a> is a single page web-based app that gives you the ability to design and fully customize a timer to your livestream overlay.",
     "about-github-text": "You are more than welcome to report errors and bugs, suggest new features or help us translate the project into a new language on the <a href='https://github.com/reala10n/pitime' target='_blank'>project's GitHub page!</a>",
 
-    "design-title": "Design your own"
+    "design-title": "Design your own!",
+
+    "mode-selector:countdown": "Countdown",
+    "mode-selector:countup": "Countup",
+    "mode-selector:current-time": "Current time",
+
+    "preview:title": "Preview",
+
+    "settings:title": "Settings"
 }

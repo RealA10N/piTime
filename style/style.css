@@ -367,6 +367,117 @@ button {
   background-color: #303030;
   color: #ffffff;
   height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#design h1 {
+  padding: 20px;
+}
+
+#design #panel {
+  display: -ms-grid;
+  display: grid;
+  grid-template: "mode-selector mode-selector" "description-bar description-bar" "preview settings";
+  -ms-grid-columns: 2fr 1fr;
+      grid-template-columns: 2fr 1fr;
+  width: 75%;
+  grid-gap: 30px 0;
+  z-index: 2;
+}
+
+#design #panel #mode-selector {
+  grid-area: mode-selector;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#design #panel #mode-selector a {
+  text-transform: uppercase;
+  cursor: pointer;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
+  padding: 15px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background: rgba(255, 255, 255, 0.3);
+  letter-spacing: 1.5px;
+}
+
+#design #panel #mode-selector a:hover:not(.selected-mode) {
+  letter-spacing: 6px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+#design #panel #mode-selector a.selected-mode {
+  color: #303030;
+  font-weight: bold;
+  background: linear-gradient(25deg, #54ed25 0%, #eaf005 100%);
+  letter-spacing: 6px;
+}
+
+#design #panel #mode-selector a.selected-mode:hover {
+  letter-spacing: 1.5px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+#design #panel #preview {
+  grid-area: "description-bar";
+  width: 100%;
+  height: 70vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#design #panel #preview h2 {
+  position: absolute;
+  bottom: 0;
+  padding: 20px;
+  font-style: italic;
+  opacity: 0.5;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  cursor: default;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+#design #panel #preview h2:hover {
+  opacity: 0;
+}
+
+#design #panel #settings {
+  grid-area: "settings";
+  width: 100%;
+  height: 70vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#design #panel #settings h2 {
+  padding: 20px;
 }
 
 #design #watermarks {
@@ -374,7 +485,7 @@ button {
   opacity: 0.05;
 }
 
-#design #watermarks > i {
+#design #watermarks i {
   position: absolute;
   display: inline;
 }

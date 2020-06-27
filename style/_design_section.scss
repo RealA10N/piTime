@@ -3,11 +3,124 @@
     color: $light-color;
     height: $design-section-height;
 
+    flex-direction: column;
+
+    h1 {
+        // "Design your own" title
+        padding: $regular-text-size;
+    }
+
+    #panel {
+        display: grid;
+        grid-template:
+            "mode-selector mode-selector"
+            "description-bar description-bar"
+            "preview settings";
+        grid-template-columns: 2fr 1fr;
+        width: 75%;
+        grid-gap: 30px 0;
+        z-index: 2;
+
+        #mode-selector {
+            // The bar that selects the mode of the timer.
+            grid-area: mode-selector;
+
+            display: flex;
+            justify-content: space-between;
+
+            $normal-spacing: 1.5px;
+
+            a {
+                // General mode button design
+                text-transform: uppercase;
+                cursor: pointer;
+                flex: 1;
+                text-align: center;
+                padding: $regular-text-size * 0.75;
+                transition: 0.3s;
+
+                // Not selected button design
+                background: rgba($light-color, 0.3);
+                letter-spacing: $normal-spacing;
+
+                &:hover:not(.selected-mode) {
+                    // Hover of not selected mode buttons
+                    letter-spacing: $normal-spacing * 4;
+                    background: rgba($light-color, 0.2);
+                }
+
+                &.selected-mode {
+                    // Design of the selected mode button
+                    color: $dark-color;
+                    font-weight: bold;
+                    background: $main-gradient;
+
+                    letter-spacing: $normal-spacing * 4;
+
+                    &:hover {
+                        // Hover and already selected
+                        letter-spacing: $normal-spacing;
+                        background-color: rgba($light-color, 0.3);
+                    }
+                }
+            }
+        }
+
+        #preview {
+            grid-area: "description-bar";
+
+            width: 100%;
+            height: 70vh;
+
+            background-color: $preview-panel-background;
+
+            position: relative;
+            display: flex;
+            justify-content: center;
+
+            h2 {
+                // Preview title
+                position: absolute;
+                bottom: 0;
+
+                padding: $regular-text-size;
+                font-style: italic;
+                opacity: 0.5;
+
+                transition: 0.2s;
+
+                cursor: default;
+                user-select: none;
+
+                &:hover {
+                    opacity: 0;
+                }
+            }
+        }
+
+        #settings {
+            grid-area: "settings";
+
+            width: 100%;
+            height: 70vh;
+
+            background-color: $settings-panel-background;
+
+            position: relative;
+            display: flex;
+            justify-content: center;
+
+            h2 {
+                padding: $regular-text-size;
+            }
+        }
+    }
+
     #watermarks {
         font-size: 50vh;
         opacity: 0.05;
 
-        > i {
+        i {
             position: absolute;
             display: inline;
         }
