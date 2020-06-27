@@ -1,3 +1,0 @@
-# Add the 'i18n' tag to every pull request
-# that changes files in the i18n folder
-i18n: i18n/*
