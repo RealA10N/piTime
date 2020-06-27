@@ -1,19 +1,18 @@
 {
-    "banner-text-1": "Appears below the 'piTime' logo in the home page. First line",
-    "banner-text-2": "Appears below the 'piTime' logo in the home page. Second line",
+    "banner:text-1": "Appears below the 'piTime' logo in the home page. First line",
+    "banner:text-2": "Appears below the 'piTime' logo in the home page. Second line",
+    "banner:design-button": "Appears on the button that redirects the user to the design section.",
 
-    "start-design-button": "Appears on the button that redirects the user to the design section.",
-
-    "about-desc-text": "First paragraph in the about section.",
-    "about-github-text": "Second paragraph in the about section.",
+    "about:desc-text": "First paragraph in the about section.",
+    "about:github-text": "Second paragraph in the about section.",
+    "about:design-button": "Appears on the button that redirects the user to the design section.",
 
     "design-title": "The title of the design section.",
+    "design:mode-selector:countdown": "The title that appears in the mode selection bar, and represents the countdown mode.",
+    "design:mode-selector:countup": "The title that appears in the mode selection bar, and represents the countup mode.",
+    "design:mode-selector:current-time": "The title that appears in the mode selection bar, and represents the current time mode.",
 
-    "mode-selector:countdown": "The title that appears in the mode selection bar, and represents the countdown mode.",
-    "mode-selector:countup": "The title that appears in the mode selection bar, and represents the countup mode.",
-    "mode-selector:current-time": "The title that appears in the mode selection bar, and represents the current time mode.",
+    "design:preview:title": "Preview panel title. Appears in the italic style.",
 
-    "preview:title": "Preview panel title. Appears in the italic style.",
-
-    "settings:title": "Settings panel title."
+    "design:settings:title": "Settings panel title."
 }

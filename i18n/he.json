@@ -4,20 +4,20 @@
         "authors": ["RealA10N"]
     },
 
-    "banner-text-1": "כלי לעיצוב טיימר אישי עבור סטרימרים.",
-    "banner-text-2": "פשוט, בעל אלפי אפשרויות עיצוב שונות, ולא מעמיס על המחשב.",
-    "start-design-button": "עצב בעצמך!",
+    "banner:text-1": "כלי לעיצוב טיימר אישי עבור סטרימרים.",
+    "banner:text-2": "פשוט, בעל אלפי אפשרויות עיצוב שונות, ולא מעמיס על המחשב.",
+    "banner:design-button": "עצב בעצמך!",
 
-    "about-desc-text": "<a href='#'>piTime</a> היא תוכנה הפועלת על הדפדפן ונותנת לך את האפשרות לעצב באופן מלא טיימר לעיצוב שידורים חיים.",
-    "about-github-text": "אתם יותר ממוזמנים לדווח על שגיאות ותקלות, להציע פ'צרים חדשים, או לעזור לנו לתרגם את האתר לשפה חדשה ב<a href='https://github.com/reala10n/pitime' target='_blank'>דף הGitHub של הפרוייקט!</a>",
+    "about:desc-text": "<a href='#'>piTime</a> היא תוכנה הפועלת על הדפדפן ונותנת לך את האפשרות לעצב באופן מלא טיימר לעיצוב שידורים חיים.",
+    "about:github-text": "אתם יותר ממוזמנים לדווח על שגיאות ותקלות, להציע פ'צרים חדשים, או לעזור לנו לתרגם את האתר לשפה חדשה ב<a href='https://github.com/reala10n/pitime' target='_blank'>דף הGitHub של הפרוייקט!</a>",
+    "about:design-button": "עצב בעצמך!",
 
-    "design-title": "עצב בעצמך!",
+    "design:title": "התחל לעצב",
+    "design:mode-selector:countdown": "ספירה לאחור",
+    "design:mode-selector:countup": "ספירה קדימה",
+    "design:mode-selector:current-time": "שעון נוכחי",
 
-    "mode-selector:countdown": "ספירה לאחור",
-    "mode-selector:countup": "ספירה קדימה",
-    "mode-selector:current-time": "שעון נוכחי",
+    "design:preview:title": "תצוגה מקדימה",
 
-    "preview:title": "תצוגה מקדימה",
-
-    "settings:title": "הגדרות"
+    "design:settings:title": "הגדרות"
 }
