@@ -2,4 +2,61 @@
     background-color: $dark-color;
     color: $light-color;
     height: $design-section-height;
+
+    #watermarks {
+        font-size: 50vh;
+        opacity: 0.05;
+
+        > i {
+            position: absolute;
+            display: inline;
+        }
+
+        #code-watermark {
+            left: -10vh;
+            top: -10vh;
+            animation: codeWaterMarkFadeIn 10s;
+        }
+
+        #cut-watermark {
+            right: 0;
+            bottom: -5vh;
+            transform: rotate(250deg);
+            animation: cutWaterMarkFadeIn 12.5s;
+        }
+    }
+}
+
+@keyframes codeWaterMarkFadeIn {
+    0% {
+        opacity: 0;
+        transform: translate(-150px, 100px);
+    }
+
+    75% {
+        opacity: 0;
+        transform: translate(-150px, 100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0px, 0px);
+    }
+}
+
+@keyframes cutWaterMarkFadeIn {
+    0% {
+        opacity: 0;
+        transform: translate(100px, 200px) rotate(200deg);
+    }
+
+    80% {
+        opacity: 0;
+        transform: translate(100px, 200px) rotate(200deg);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0px, 0px) rotate(250deg);
+    }
 }

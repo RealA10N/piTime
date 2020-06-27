@@ -223,7 +223,7 @@ button {
             transform: rotateX(90deg);
   }
   to {
-    opacity: 100;
+    opacity: 1;
     -webkit-transform: rotateX(0deg);
             transform: rotateX(0deg);
   }
@@ -236,7 +236,7 @@ button {
             transform: rotateX(90deg);
   }
   to {
-    opacity: 100;
+    opacity: 1;
     -webkit-transform: rotateX(0deg);
             transform: rotateX(0deg);
   }
@@ -367,5 +367,103 @@ button {
   background-color: #303030;
   color: #ffffff;
   height: 100vh;
+}
+
+#design #watermarks {
+  font-size: 50vh;
+  opacity: 0.05;
+}
+
+#design #watermarks > i {
+  position: absolute;
+  display: inline;
+}
+
+#design #watermarks #code-watermark {
+  left: -10vh;
+  top: -10vh;
+  -webkit-animation: codeWaterMarkFadeIn 10s;
+          animation: codeWaterMarkFadeIn 10s;
+}
+
+#design #watermarks #cut-watermark {
+  right: 0;
+  bottom: -5vh;
+  -webkit-transform: rotate(250deg);
+          transform: rotate(250deg);
+  -webkit-animation: cutWaterMarkFadeIn 12.5s;
+          animation: cutWaterMarkFadeIn 12.5s;
+}
+
+@-webkit-keyframes codeWaterMarkFadeIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(-150px, 100px);
+            transform: translate(-150px, 100px);
+  }
+  75% {
+    opacity: 0;
+    -webkit-transform: translate(-150px, 100px);
+            transform: translate(-150px, 100px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+  }
+}
+
+@keyframes codeWaterMarkFadeIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(-150px, 100px);
+            transform: translate(-150px, 100px);
+  }
+  75% {
+    opacity: 0;
+    -webkit-transform: translate(-150px, 100px);
+            transform: translate(-150px, 100px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+  }
+}
+
+@-webkit-keyframes cutWaterMarkFadeIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(100px, 200px) rotate(200deg);
+            transform: translate(100px, 200px) rotate(200deg);
+  }
+  80% {
+    opacity: 0;
+    -webkit-transform: translate(100px, 200px) rotate(200deg);
+            transform: translate(100px, 200px) rotate(200deg);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0px, 0px) rotate(250deg);
+            transform: translate(0px, 0px) rotate(250deg);
+  }
+}
+
+@keyframes cutWaterMarkFadeIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(100px, 200px) rotate(200deg);
+            transform: translate(100px, 200px) rotate(200deg);
+  }
+  80% {
+    opacity: 0;
+    -webkit-transform: translate(100px, 200px) rotate(200deg);
+            transform: translate(100px, 200px) rotate(200deg);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0px, 0px) rotate(250deg);
+            transform: translate(0px, 0px) rotate(250deg);
+  }
 }
 /*# sourceMappingURL=style.css.map */
