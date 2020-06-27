@@ -5,18 +5,71 @@
 }
 
 .section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
   position: relative;
   background-size: cover;
   overflow: hidden;
+  /* Shadown effect between sections */
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(90%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.1)));
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0) 90%, rgba(0, 0, 0, 0.1) 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+button {
+  /* Default font */
+  font-family: "Rubik", sans-serif;
+  font-size: 20px;
+}
+
+.light-btn, .dark-btn {
+  color: #ffffff;
+  background: transparent;
+  border: 1.5px solid #ffffff;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  border-radius: 0.5em;
+  z-index: 2;
+  padding: 0.8em;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  position: relative;
+  top: 20px;
+}
+
+.light-btn:hover, .dark-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  -webkit-box-shadow: inset 5px 5px 5px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: inset 5px 5px 5px 0px rgba(0, 0, 0, 0.1);
+}
+
+.dark-btn {
+  color: #303030;
+  border-color: #303030;
 }
 
 #banner {
   background: linear-gradient(25deg, #54ed25 0%, #eaf005 100%);
   color: #ffffff;
   height: 100vh;
-  position: relative;
-  background-size: cover;
-  overflow: hidden;
 }
 
 #banner #lang-selector {
@@ -31,7 +84,6 @@
   background: none;
   border: none;
   color: #303030;
-  font-size: 20px;
   cursor: pointer;
 }
 
@@ -96,7 +148,6 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-size: 20px;
   -webkit-animation: logoFadeIn 1s;
           animation: logoFadeIn 1s;
 }
@@ -115,7 +166,7 @@
 }
 
 #banner #banner-text #design-btn {
-  margin: 1em 0 0;
+  top: 30px;
 }
 
 #banner #hourglass-logo {
@@ -195,10 +246,10 @@
   background-color: #ffffff;
   color: #303030;
   height: 75vh;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 #about #clock {
@@ -220,6 +271,8 @@
       -ms-user-select: none;
           user-select: none;
   z-index: 2;
+  width: 30vh;
+  margin: 2em;
 }
 
 #about #clock h3 {
@@ -234,6 +287,21 @@
   /* Seconds */
   opacity: 0.25;
   font-size: 5vh;
+}
+
+#about #text-container {
+  width: 30%;
+}
+
+#about #text-container p {
+  margin-bottom: 20px;
+}
+
+#about #text-container p a,
+#about #text-container p a:visited {
+  color: #303030;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 #about #clock-logo {
@@ -286,62 +354,18 @@
   }
 }
 
+@media screen and (orientation: portrait) {
+  #about #clock {
+    display: none;
+  }
+  #about #text-container {
+    width: 75%;
+  }
+}
+
 #design {
   background-color: #303030;
   color: #ffffff;
   height: 100vh;
-}
-
-* {
-  /* Reset margin and padding */
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body,
-button {
-  /* Default font */
-  font-family: "Rubik", sans-serif;
-}
-
-.section {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 100%;
-  /* Shadown effect between sections */
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(90%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.1)));
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0) 90%, rgba(0, 0, 0, 0.1) 100%);
-}
-
-.light-btn {
-  color: #ffffff;
-  background: transparent;
-  border: 1.5px solid #ffffff;
-  text-decoration: none;
-  -webkit-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-  border-radius: 0.5em;
-  z-index: 2;
-  padding: 0.8em;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  position: absolute;
-}
-
-.light-btn:hover {
-  background: rgba(255, 255, 255, 0.1);
-  -webkit-box-shadow: inset 5px 5px 5px 0px rgba(0, 0, 0, 0.1);
-          box-shadow: inset 5px 5px 5px 0px rgba(0, 0, 0, 0.1);
 }
 /*# sourceMappingURL=style.css.map */

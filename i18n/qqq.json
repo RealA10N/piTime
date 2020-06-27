@@ -1,9 +1,11 @@
 {
     "banner-text-1": "Appears below the 'piTime' logo in the home page. First line",
     "banner-text-2": "Appears below the 'piTime' logo in the home page. Second line",
-    "banner-design-button": "Appears on the button that redirects the user to the design section.",
 
-    "about-title": "The title of the about section.",
+    "start-design-button": "Appears on the button that redirects the user to the design section.",
+
+    "about-desc-text": "First paragraph in the about section.",
+    "about-github-text": "Second paragraph in the about section.",
 
     "design-title": "The title of the design section."
 }

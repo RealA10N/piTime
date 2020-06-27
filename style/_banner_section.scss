@@ -3,10 +3,6 @@
     color: $light-color;
     height: $banner-section-height;
 
-    position: relative;
-    background-size: cover;
-    overflow: hidden;
-
     #lang-selector {
         position: absolute;
         right: 0;
@@ -20,7 +16,6 @@
             border: none;
             color: $dark-color;
 
-            font-size: 20px;
             cursor: pointer;
 
             i {
@@ -74,8 +69,6 @@
 
         @include center;
 
-        font-size: 20px;
-
         animation: logoFadeIn 1s;
 
         #piTime-text {
@@ -92,7 +85,7 @@
         }
 
         #design-btn {
-            margin: 1em 0 0;
+            top: $regular-text-size * 1.5;
         }
     }
 

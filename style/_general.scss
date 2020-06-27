@@ -10,6 +10,8 @@ $banner-section-height: 100vh;
 $about-section-height: 75vh;
 $design-section-height: 100vh;
 
+$regular-text-size: 20px;
+
 @mixin center {
     display: flex;
     align-items: center;
@@ -17,7 +19,61 @@ $design-section-height: 100vh;
 }
 
 .section {
+    @include center;
+    width: 100%;
     position: relative;
     background-size: cover;
     overflow: hidden;
+
+    /* Shadown effect between sections */
+    background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0) 90%,
+        rgba(0, 0, 0, 0.1) 100%
+    );
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body,
+button {
+    /* Default font */
+    font-family: "Rubik", sans-serif;
+    font-size: $regular-text-size;
+}
+
+.light-btn {
+    color: $light-color;
+    background: transparent;
+
+    border: 1.5px solid $light-color;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+    border-radius: 0.5em;
+
+    z-index: 2;
+    padding: 0.8em;
+    box-shadow: none;
+
+    position: relative;
+    top: $regular-text-size;
+
+    &:hover {
+        background: rgba(255, 255, 255, 0.1);
+        box-shadow: inset 5px 5px 5px 0px rgba(0, 0, 0, 0.1);
+    }
+}
+
+.dark-btn {
+    @extend .light-btn;
+
+    color: $dark-color;
+    border-color: $dark-color;
 }

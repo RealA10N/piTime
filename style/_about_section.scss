@@ -3,13 +3,16 @@
     color: $dark-color;
     height: $about-section-height;
 
-    flex-direction: column;
+    flex-direction: row;
 
     #clock {
         @include center;
         flex-direction: column;
         user-select: none;
         z-index: 2;
+
+        width: 30vh;
+        margin: 2em;
 
         h3 {
             /* Hours and minutes */
@@ -24,6 +27,21 @@
             /* Seconds */
             opacity: 0.25;
             font-size: 5vh;
+        }
+    }
+
+    #text-container {
+        width: 30%;
+
+        p {
+            margin-bottom: $regular-text-size;
+
+            a,
+            a:visited {
+                color: $dark-color;
+                text-decoration: none;
+                font-weight: bold;
+            }
         }
     }
 
@@ -57,5 +75,17 @@
     100% {
         opacity: 0.05;
         transform: rotate(30deg);
+    }
+}
+
+@media screen and (orientation: portrait) {
+    #about {
+        #clock {
+            display: none;
+        }
+
+        #text-container {
+            width: 75%;
+        }
     }
 }

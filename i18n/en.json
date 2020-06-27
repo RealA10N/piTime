@@ -4,11 +4,12 @@
         "authors": ["RealA10N"]
     },
 
-    "banner-text-1": "Fully customizable timer and countdown for streamers",
-    "banner-text-2": "Emphasizes simplicity, creativity, and very low processing power",
-    "banner-design-button": "Design your own!",
+    "banner-text-1": "Fully customizable timer and countdown for streamers.",
+    "banner-text-2": "Emphasizes simplicity, creativity, and very low processing power.",
+    "start-design-button": "Design your own!",
 
-    "about-title": "What's piTime?",
+    "about-desc-text": "<a href='#'>piTime</a> is a single page web-based app that gives you the ability to design and fully customize a timer to your livestream overlay.",
+    "about-github-text": "You are more than welcome to report errors and bugs, suggest new features or help us translate the project into a new language on the <a href='https://github.com/reala10n/pitime' target='_blank'>project's GitHub page!</a>",
 
     "design-title": "Design your own"
 }
