@@ -1,0 +1,57 @@
+{
+    "global_settings": [
+        {
+            "label": "design:settings:timer:font-size",
+            "id": "timer-font-size",
+            "units": "design:settings:units:pixels",
+            "slider": {
+                "min": 8,
+                "max": 256,
+                "default": 64,
+                "step": 4
+            }
+        },
+
+        {
+            "label": "design:settings:timer:letter-spacing",
+            "id": "timer-letter-spacing",
+            "units": "design:settings:units:pixels",
+            "slider": {
+                "min": -25,
+                "max": 25,
+                "default": 0,
+                "step": 1
+            }
+        },
+
+        {
+            "label": "design:settings:timer:x-offset",
+            "id": "timer-x-offset",
+            "units": "design:settings:units:pixels",
+            "slider": {
+                "min": -500,
+                "max": 500,
+                "default": 0,
+                "step": 10
+            }
+        },
+
+        {
+            "label": "design:settings:timer:y-offset",
+            "id": "timer-y-offset",
+            "units": "design:settings:units:pixels",
+            "slider": {
+                "min": -500,
+                "max": 500,
+                "default": 0,
+                "step": 10
+            }
+        }
+    ],
+
+    "countdown_settings": [],
+
+    "countup_settings": [],
+
+    "current_time_settings": []
+}

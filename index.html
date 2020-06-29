@@ -34,9 +34,11 @@
         <script src="js/moduels/moment.js/moment.js" defer></script>
 
         <!-- JS Scripts -->
-        <script src="js/load_i18n.js" defer></script>
         <script src="js/about_clock.js" defer></script>
         <script src="js/select_timer_mode.js" defer></script>
+        <script src="js/timer_modes.js" defer></script>
+        <script src="js/load_settings.js" defer></script>
+        <script src="js/load_i18n.js" defer></script>
     </head>
 
     <body>
@@ -117,10 +119,27 @@
                 </div>
 
                 <div id="preview">
+                    <div id="timer-wrapper">
+                        <div id="timer-container">
+                            <span id="days"></span>
+                            :
+                            <span id="hours"></span>
+                            :
+                            <span id="minutes"></span>
+                            :
+                            <span id="seconds"></span>
+                        </div>
+                    </div>
+
                     <h2 data-i18n="design:preview:title"></h2>
                 </div>
                 <div id="settings">
                     <h2 data-i18n="design:settings:title"></h2>
+                    <!-- other elements are added using the load_setting.js script-->
+                </div>
+
+                <div id="set-time">
+                    <h2>Buttons panel</h2>
                 </div>
             </div>
         </div>

@@ -1,13 +1,14 @@
-$light-color: #ffffff;
-$dark-color: #303030;
-
-$preview-panel-background: rgba(0, 0, 0, 0.4);
-$settings-panel-background: rgba(0, 0, 0, 0.7);
-
 $main-color: #54ed25;
 $accent-color: #eaf005;
 
 $main-gradient: linear-gradient(25deg, $main-color 0%, $accent-color 100%);
+
+$light-color: #ffffff;
+$dark-color: #303030;
+
+$preview-panel-background: rgba(0, 0, 0, 0.3);
+$settings-panel-background: rgba(0, 0, 0, 0.5);
+$buttons-panel-background: rgba(0, 0, 0, 0.8);
 
 $banner-section-height: 100vh;
 $about-section-height: 75vh;
@@ -52,6 +53,8 @@ button {
     font-size: $regular-text-size;
 }
 
+// - - - Buttons - - - //
+
 .light-btn {
     color: $light-color;
     background: transparent;
@@ -79,4 +82,25 @@ button {
 
     color: $dark-color;
     border-color: $dark-color;
+}
+
+// - - - Scrollbar - - - //
+
+body {
+    ::-webkit-scrollbar {
+        width: 12px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: rgba($light-color, 0.2);
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: rgba($light-color, 0.4);
+
+        &:hover {
+            background: rgba($light-color, 0.5);
+        }
+    }
 }

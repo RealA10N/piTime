@@ -66,6 +66,26 @@ button {
   border-color: #303030;
 }
 
+body {
+  /* Handle */
+}
+
+body ::-webkit-scrollbar {
+  width: 12px;
+}
+
+body ::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+body ::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+body ::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
 #banner {
   background: linear-gradient(25deg, #54ed25 0%, #eaf005 100%);
   color: #ffffff;
@@ -380,16 +400,19 @@ button {
 #design #panel {
   display: -ms-grid;
   display: grid;
-  grid-template: "mode-selector mode-selector" "description-bar description-bar" "preview settings";
-  -ms-grid-columns: 2fr 1fr;
-      grid-template-columns: 2fr 1fr;
+      grid-template-areas: "modeselector modeselector" "preview settings" "preview settime";
+  -ms-grid-columns: minmax(0, 2fr) minmax(0, 1fr);
+      grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
   width: 75%;
-  grid-gap: 30px 0;
+  grid-gap: 30px;
   z-index: 2;
 }
 
 #design #panel #mode-selector {
-  grid-area: mode-selector;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: modeselector;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -430,14 +453,25 @@ button {
 }
 
 #design #panel #preview {
-  grid-area: "description-bar";
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: preview;
   width: 100%;
   height: 70vh;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.3);
+  direction: ltr;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -448,36 +482,161 @@ button {
   bottom: 0;
   padding: 20px;
   font-style: italic;
-  opacity: 0.5;
+  opacity: 0.2;
   -webkit-transition: 0.2s;
   transition: 0.2s;
   cursor: default;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
 }
 
 #design #panel #preview h2:hover {
   opacity: 0;
 }
 
-#design #panel #settings {
-  grid-area: "settings";
+#design #panel #preview #timer-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100%;
-  height: 70vh;
-  background-color: rgba(0, 0, 0, 0.7);
+  height: 100%;
+}
+
+#design #panel #preview #timer-container {
+  white-space: nowrap;
+  position: relative;
+  padding: 25px;
+}
+
+#design #panel #preview #timer-container * {
+  max-width: 100%;
+}
+
+#design #panel #settings {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: settings;
+  width: 100%;
+  height: 60vh;
+  background-color: rgba(0, 0, 0, 0.5);
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow-y: auto;
 }
 
 #design #panel #settings h2 {
   padding: 20px;
+}
+
+#design #panel #settings .setting-type {
+  width: 75%;
+}
+
+#design #panel #settings .setting {
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 20px;
+}
+
+#design #panel #settings .setting h3 {
+  color: #ffffff;
+}
+
+#design #panel #settings .setting .setting-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+#design #panel #settings .setting .setting-row input {
+  width: 70%;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  height: 5px;
+  outline: none;
+  background: rgba(255, 255, 255, 0.75);
+  border-radius: 5px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#design #panel #settings .setting .setting-row input:hover {
+  background: #ffffff;
+}
+
+#design #panel #settings .setting .setting-row input:hover::-webkit-slider-thumb {
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+}
+
+#design #panel #settings .setting .setting-row input:hover::-moz-range-thumb {
+  transform: scale(1.25);
+}
+
+#design #panel #settings .setting .setting-row input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 7.5px;
+  background: linear-gradient(25deg, #54ed25 0%, #eaf005 100%);
+  border: none;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#design #panel #settings .setting .setting-row input::-moz-range-thumb {
+  width: 15px;
+  height: 15px;
+  border-radius: 7.5px;
+  background: linear-gradient(25deg, #54ed25 0%, #eaf005 100%);
+  border: none;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#design #panel #settings .setting .setting-row .unit {
+  font-size: 15px;
+}
+
+#design #panel #set-time {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: settime;
+  height: 10vh;
+  width: auto;
+  margin-top: -30px;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #design #watermarks {
@@ -576,5 +735,9 @@ button {
     -webkit-transform: translate(0px, 0px) rotate(250deg);
             transform: translate(0px, 0px) rotate(250deg);
   }
+}
+
+#timer-wrapper {
+  overflow: hidden;
 }
 /*# sourceMappingURL=style.css.map */

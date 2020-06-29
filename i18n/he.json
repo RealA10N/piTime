@@ -19,5 +19,12 @@
 
     "design:preview:title": "תצוגה מקדימה",
 
-    "design:settings:title": "הגדרות"
+    "design:settings:title": "הגדרות",
+
+    "design:settings:units:pixels": "פיקסלים",
+
+    "design:settings:timer:font-size": "גודל גופן",
+    "design:settings:timer:letter-spacing": "רווח בין אותיות",
+    "design:settings:timer:x-offset": "הזזה בציר X",
+    "design:settings:timer:y-offset": "הזזה בציר Y"
 }
