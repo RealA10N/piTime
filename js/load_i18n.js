@@ -30,11 +30,14 @@ function load_i18n(lang) {
     /* Save the selected language as a cookie,
     to load automaticly next time the user visites the website. */
     Cookies.set("language", lang, { expires: 100 });
+
+    /* Close the popup language select (if visible) */
+    close_language_select_popup();
 }
 
 function load_lang_selector() {
     $.getJSON(LANG_JSON_PATH, function (json_data) {
-        LangList = $("#lang-list");
+        LangList = $("#selector-language-list");
 
         for (let [lang_code, lang_dict] of Object.entries(json_data)) {
             LangList.append(
@@ -57,8 +60,33 @@ function load_cookie_lang() {
         load_i18n(lang_cookie);
     } else {
         load_i18n("en");
+        load_language_select_popup();
     }
 }
 
-load_lang_selector("i18n/languages.json");
+function load_language_select_popup() {
+    $.getJSON(LANG_JSON_PATH, function (json_data) {
+        LangList = $("#popup-language-list");
+
+        for (let [lang_code, lang_dict] of Object.entries(json_data)) {
+            LangList.append(
+                `<a onclick="close_language_select_popup('${lang_code}')">${lang_dict["name"]}</a>`
+            );
+        }
+    });
+
+    $("#select-lang-popup").show();
+}
+
+function close_language_select_popup(lang_selected) {
+    /* Called when clicked on the 'x' icon,
+    or when clicking on a language. */
+    $("#select-lang-popup").hide();
+
+    if (lang_selected != null) {
+        load_i18n(lang_selected);
+    }
+}
+
 load_cookie_lang();
+load_lang_selector();

@@ -55,7 +55,7 @@
                     <i class="fas fa-globe-africa"></i>
                     <span id="cur-lang"></span>
                 </button>
-                <ul id="lang-list"></ul>
+                <ul id="selector-language-list"></ul>
             </div>
 
             <div id="banner-text">
@@ -145,6 +145,29 @@
                 <div id="set-time">
                     <h2>Buttons panel</h2>
                 </div>
+            </div>
+        </div>
+
+        <div id="select-lang-popup">
+            <div id="popup-background">
+                <!-- This text appears in a popup the first time a user visits the site
+                This text can't be translated, and will always appear in English. -->
+
+                <i
+                    id="close-btn"
+                    class="fas fa-times"
+                    onclick="close_language_select_popup()"
+                ></i>
+
+                <div id="content">
+                    <h2>Welcome!</h2>
+                    <p>
+                        For the best experience, please select your preferred
+                        language
+                    </p>
+                </div>
+
+                <div id="popup-language-list"></div>
             </div>
         </div>
     </body>
