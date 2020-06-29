@@ -21,9 +21,8 @@ The best way to support my project is by translating it to your local language! 
 
 ### Important comments
 
-* Please make sure **not** to translate "piTime" to your language (leave it in English!)
-* The base language of the site is English. Please only use [en.json](i18n/en.json) as your source!
-* For your convivence, the [qqq.json](i18n/qqq.json) file contains the description of each string. While translating, those descriptions will describe where each and every string appears in the site, so you can have some context and translate the best you can!
+-   Please make sure **not** to translate "piTime" to your language (leave it in English!)
+-   The base language of the site is English. Please only use [en.json](i18n/en.json) as your source!
 
 ## Credits
 
