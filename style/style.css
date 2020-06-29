@@ -479,7 +479,7 @@ body ::-webkit-scrollbar-thumb:hover {
 
 #design #panel #preview h2 {
   position: absolute;
-  bottom: 0;
+  top: 0;
   padding: 20px;
   font-style: italic;
   opacity: 0.2;
@@ -567,7 +567,7 @@ body ::-webkit-scrollbar-thumb:hover {
 }
 
 #design #panel #settings .setting .setting-row input {
-  width: 70%;
+  width: 60%;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;

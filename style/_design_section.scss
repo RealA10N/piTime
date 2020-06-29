@@ -84,7 +84,7 @@ $grid-gap: 30px;
             h2 {
                 // Preview title
                 position: absolute;
-                bottom: 0;
+                top: 0;
 
                 padding: $regular-text-size;
                 font-style: italic;
@@ -155,7 +155,7 @@ $grid-gap: 30px;
                     align-items: baseline;
 
                     input {
-                        width: 70%;
+                        width: 60%;
 
                         appearance: none;
                         height: 5px;
