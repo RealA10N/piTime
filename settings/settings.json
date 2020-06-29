@@ -13,18 +13,6 @@
         },
 
         {
-            "label": "design:settings:timer:letter-spacing",
-            "id": "timer-letter-spacing",
-            "units": "design:settings:units:pixels",
-            "slider": {
-                "min": -25,
-                "max": 25,
-                "default": 0,
-                "step": 1
-            }
-        },
-
-        {
             "label": "design:settings:timer:x-offset",
             "id": "timer-x-offset",
             "units": "design:settings:units:pixels",
@@ -45,6 +33,30 @@
                 "max": 500,
                 "default": 0,
                 "step": 10
+            }
+        },
+
+        {
+            "label": "design:settings:timer:rotation",
+            "id": "timer-rotation",
+            "units": "design:settings:units:degrees",
+            "slider": {
+                "min": -180,
+                "max": 180,
+                "default": 0,
+                "step": 5
+            }
+        },
+
+        {
+            "label": "design:settings:timer:letter-spacing",
+            "id": "timer-letter-spacing",
+            "units": "design:settings:units:pixels",
+            "slider": {
+                "min": -25,
+                "max": 25,
+                "default": 0,
+                "step": 1
             }
         }
     ],

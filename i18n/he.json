@@ -22,9 +22,11 @@
     "design:settings:title": "הגדרות",
 
     "design:settings:units:pixels": "פיקסלים",
+    "design:settings:units:degrees": "מעלות",
 
     "design:settings:timer:font-size": "גודל גופן",
-    "design:settings:timer:letter-spacing": "רווח בין אותיות",
     "design:settings:timer:x-offset": "הזזה בציר X",
-    "design:settings:timer:y-offset": "הזזה בציר Y"
+    "design:settings:timer:y-offset": "הזזה בציר Y",
+    "design:settings:timer:rotation": "סיבוב",
+    "design:settings:timer:letter-spacing": "רווח בין אותיות"
 }

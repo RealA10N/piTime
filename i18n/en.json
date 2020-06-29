@@ -22,9 +22,11 @@
     "design:settings:title": "Settings",
 
     "design:settings:units:pixels": "Pixels",
+    "design:settings:units:degrees": "Degrees",
 
     "design:settings:timer:font-size": "Font size",
-    "design:settings:timer:letter-spacing": "Letter spacing",
     "design:settings:timer:x-offset": "X-axis offset",
-    "design:settings:timer:y-offset": "Y-axis offset"
+    "design:settings:timer:y-offset": "Y-axis offset",
+    "design:settings:timer:rotation": "Rotation",
+    "design:settings:timer:letter-spacing": "Letter spacing"
 }

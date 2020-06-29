@@ -81,6 +81,10 @@ function update_value_of_setting(element_id, value) {
         case "timer-y-offset":
             timer.css("top", value + "px");
             break;
+
+        case "timer-rotation":
+            timer.css("transform", `rotate(${value}deg)`);
+            break;
     }
 }
 
