@@ -7,9 +7,17 @@
     <img alt="HitCount" src="http://hits.dwyl.com/RealA10N/piTime.svg"/>
 </p>
 
+# What's piTime?
+
+piTime is a single page web-based app that gives you the ability to design and fully customize a timer to put in your livestream!
+
+# Contribute
+
+There are a couple of ways you can contribute to the project. If you have a feature or improvement you wish to add on your own, you are more then welcome to fork this repo, and create a pull request. Otherwise,
+
 ## Translate
 
-The best way to support my project is by translating it to your local language! It takes only about 20 minutes, and it helps to spread the project a ton. So, you are in? Great! here are the steps you need to follow:
+One of the best ways to support my project is by translating it to your local language! It takes only about 20 minutes, and it helps to spread the project a ton. So, you are in? Great! here are the steps you need to follow:
 
 1. Fork this repository to your own GitHub account.
 
@@ -24,7 +32,7 @@ The best way to support my project is by translating it to your local language! 
 -   Please make sure **not** to translate "piTime" to your language (leave it in English!)
 -   The base language of the site is English. Please only use [en.json](i18n/en.json) as your source!
 
-## Credits
+# Credits
 
 The "hourglass icon" that appears in the logo of this project is taken from [FontAwesome.com](https://fontawesome.com/icons/hourglass-half).
 The font that is used in the logo of this project is called "Typo Round" and its created by "Studio Typo". You can get this font from [dafont.com](https://www.dafont.com/typo-round.font?text=piTime).
