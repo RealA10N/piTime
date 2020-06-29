@@ -86,6 +86,8 @@ body ::-webkit-scrollbar-thumb:hover {
   background: rgba(255, 255, 255, 0.5);
 }
 
+/* Design of the select langauge popup.
+This popup appears the first time the user visits the website! */
 #select-lang-popup {
   display: none;
   direction: ltr;
