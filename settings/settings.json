@@ -1,69 +1,74 @@
 {
-    "global_settings": [
-        {
+    "global_settings": {
+        "font-size": {
             "label": "design:settings:timer:font-size",
-            "id": "timer-font-size",
             "units": "design:settings:units:pixels",
             "slider": {
                 "min": 8,
                 "max": 256,
                 "default": 64,
                 "step": 4
-            }
+            },
+
+            "set-function": "_set_font_size"
         },
 
-        {
+        "x-offset": {
             "label": "design:settings:timer:x-offset",
-            "id": "timer-x-offset",
             "units": "design:settings:units:pixels",
             "slider": {
                 "min": -500,
                 "max": 500,
                 "default": 0,
                 "step": 10
-            }
+            },
+
+            "set-function": "_set_x_offset"
         },
 
-        {
+        "y-offset": {
             "label": "design:settings:timer:y-offset",
-            "id": "timer-y-offset",
             "units": "design:settings:units:pixels",
             "slider": {
                 "min": -500,
                 "max": 500,
                 "default": 0,
                 "step": 10
-            }
+            },
+
+            "set-function": "_set_y_offset"
         },
 
-        {
+        "rotation": {
             "label": "design:settings:timer:rotation",
-            "id": "timer-rotation",
             "units": "design:settings:units:degrees",
             "slider": {
                 "min": -180,
                 "max": 180,
                 "default": 0,
                 "step": 5
-            }
+            },
+
+            "set-function": "_set_rotation"
         },
 
-        {
+        "letter-spacing": {
             "label": "design:settings:timer:letter-spacing",
-            "id": "timer-letter-spacing",
             "units": "design:settings:units:pixels",
             "slider": {
                 "min": -25,
                 "max": 25,
                 "default": 0,
                 "step": 1
-            }
+            },
+
+            "set-function": "_set_letter_spacing"
         }
-    ],
+    },
 
-    "countdown_settings": [],
+    "countdown_settings": {},
 
-    "countup_settings": [],
+    "countup_settings": {},
 
-    "current_time_settings": []
+    "current_time_settings": {}
 }
