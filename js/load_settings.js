@@ -51,7 +51,8 @@ function get_settings_element(id, data) {
     element = document.createElement("div");
     element.classList.add("setting");
 
-    /* Default HTML template of each input field */
+    /* Default HTML template of each input field.
+    m e s s y   c o d e   s o r r y   o k */
     element.innerHTML = `
         <h3 data-i18n="${data["label"]}"></h3>
         <div class="setting-row">
@@ -60,7 +61,7 @@ function get_settings_element(id, data) {
             <span class="value-section">
                 <input id="${id}-value" type="number" onclick="this.select();"
                 oninput="update_value_on_text_input('${id}', this.value, '${data["set-function"]}')"
-                onfocusout="update_value_on_text_focusout(this, '${id}', '${data["set-function"]}')"/>
+                onfocusout="update_value_on_text_focusout(this, '${data["slider"]["default"]}', '${id}', '${data["set-function"]}')"/>
                 <span class="unit" data-i18n="${data["units"]}"></span>
             </span>
         </div>`;
@@ -111,12 +112,17 @@ function update_value_on_text_input(element_id, value, set_function_name) {
     update_display_on_value_change(value, set_function_name);
 }
 
-function update_value_on_text_focusout(element, id, set_function_name) {
+function update_value_on_text_focusout(
+    element,
+    default_value,
+    id,
+    set_function_name
+) {
     /* This function is called when the user focuses out
     of the input field. */
 
     if (element.value == "") {
-        element.value = 0;
+        element.value = default_value;
         update_value_on_text_input(id, element.value, set_function_name);
     }
 }
