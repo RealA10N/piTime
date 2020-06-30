@@ -25,7 +25,7 @@ function load_settings() {
                     "input"
                 )[0];
 
-                update_value_of_setting(
+                update_value_on_slider_input(
                     `${setting["id"]}`,
                     input_element.value
                 );
@@ -45,9 +45,10 @@ function get_settings_element(data) {
         <h3 data-i18n="${data["label"]}"></h3>
         <div class="setting-row">
             <input type="range" min=${data["slider"]["min"]} max="${data["slider"]["max"]}" step="${data["slider"]["step"]}" value="${data["slider"]["default"]}"
-            oninput="update_value_of_setting('${data["id"]}', this.value)"/>
+            id="${data["id"]}-slider" oninput="update_value_on_slider_input('${data["id"]}', this.value)"/>
             <span class="value-section">
-                <span class="value" id="${data["id"]}-value"></span>
+                <input id="${data["id"]}-value" type="number" onclick="this.select();"
+                oninput="update_value_on_text_input('${data["id"]}', this.value)"/>
                 <span class="unit" data-i18n="${data["units"]}"></span>
             </span>
         </div>`;
@@ -55,13 +56,36 @@ function get_settings_element(data) {
     return element;
 }
 
-function update_value_of_setting(element_id, value) {
+function update_value_on_slider_input(element_id, value) {
     /* This function is called everytime the user changes
-    something in the design of the timer. it updates the 'value'
-    text in the near the edited field, and updates the design
-    of the timer! */
+    the slider value in one of the settings. It updates the 
+    'value' text of the same setting, and updates the
+    preview design of the timer! */
 
-    $(`#${element_id}-value`).text(value); // Update "value" text
+    $(`#${element_id}-value`).val(value); // Update "value" text
+    update_display_on_value_change(element_id, value);
+}
+
+function update_value_on_text_input(element_id, value) {
+    /* This function is called everytime the user changes
+    the value of one of the settings (in text form).
+    It updates the 'slider' of the same setting, and updates the
+    preview design of the timer! */
+
+    /* If all text deleted */
+    if (value == "") {
+        value = 0;
+        $(`#${element_id}-value`).val(0);
+    }
+
+    $(`#${element_id}-slider`).val(value);
+    update_display_on_value_change(element_id, value);
+}
+
+function update_display_on_value_change(element_id, value) {
+    /* This function is called everytime one of
+    the settings change, and it updates the preview design. */
+
     timer = $("#timer-container");
 
     /* Handling different settings */

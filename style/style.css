@@ -595,7 +595,7 @@ This popup appears the first time the user visits the website! */
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  overflow-y: auto;
+  overflow: auto;
 }
 
 #design #panel #settings h2 {
@@ -627,8 +627,17 @@ This popup appears the first time the user visits the website! */
           align-items: baseline;
 }
 
-#design #panel #settings .setting .setting-row input {
-  width: 60%;
+#design #panel #settings .setting .setting-row .value-section {
+  white-space: nowrap;
+  float: end;
+  -webkit-margin-start: 25px;
+          margin-inline-start: 25px;
+}
+
+#design #panel #settings .setting .setting-row input[type="range"] {
+  width: -webkit-fill-available;
+  width: -moz-available;
+  width: fill;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -640,20 +649,20 @@ This popup appears the first time the user visits the website! */
   transition: 0.3s;
 }
 
-#design #panel #settings .setting .setting-row input:hover {
+#design #panel #settings .setting .setting-row input[type="range"]:hover {
   background: #ffffff;
 }
 
-#design #panel #settings .setting .setting-row input:hover::-webkit-slider-thumb {
+#design #panel #settings .setting .setting-row input[type="range"]:hover::-webkit-slider-thumb {
   -webkit-transform: scale(1.25);
           transform: scale(1.25);
 }
 
-#design #panel #settings .setting .setting-row input:hover::-moz-range-thumb {
+#design #panel #settings .setting .setting-row input[type="range"]:hover::-moz-range-thumb {
   transform: scale(1.25);
 }
 
-#design #panel #settings .setting .setting-row input::-webkit-slider-thumb {
+#design #panel #settings .setting .setting-row input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
   width: 15px;
@@ -666,7 +675,7 @@ This popup appears the first time the user visits the website! */
   transition: 0.3s;
 }
 
-#design #panel #settings .setting .setting-row input::-moz-range-thumb {
+#design #panel #settings .setting .setting-row input[type="range"]::-moz-range-thumb {
   width: 15px;
   height: 15px;
   border-radius: 7.5px;
@@ -675,6 +684,22 @@ This popup appears the first time the user visits the website! */
   cursor: pointer;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+
+#design #panel #settings .setting .setting-row input[type="number"] {
+  border: none;
+  font-family: inherit;
+  font-size: 20px;
+  background: transparent;
+  width: 50px;
+  text-align: end;
+  color: #ffffff;
+  opacity: 0.5;
+  -moz-appearance: textfield;
+}
+
+#design #panel #settings .setting .setting-row input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
 }
 
 #design #panel #settings .setting .setting-row .unit {
