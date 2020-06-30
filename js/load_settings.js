@@ -59,7 +59,8 @@ function get_settings_element(id, data) {
             class="slider" id="${id}-slider" oninput="update_value_on_slider_input('${id}', this.value, '${data["set-function"]}')"/>
             <span class="value-section">
                 <input id="${id}-value" type="number" onclick="this.select();"
-                oninput="update_value_on_text_input('${id}', this.value, '${data["set-function"]}')"/>
+                oninput="update_value_on_text_input('${id}', this.value, '${data["set-function"]}')"
+                onfocusout="update_value_on_text_focusout(this, '${id}', '${data["set-function"]}')"/>
                 <span class="unit" data-i18n="${data["units"]}"></span>
             </span>
         </div>`;
@@ -106,14 +107,18 @@ function update_value_on_text_input(element_id, value, set_function_name) {
     It updates the 'slider' of the same setting, and updates the
     preview design of the timer! */
 
-    /* If all text deleted */
-    if (value == "") {
-        value = 0;
-        $(`#${element_id}-value`).val(0);
-    }
-
     $(`#${element_id}-slider`).val(value);
     update_display_on_value_change(value, set_function_name);
+}
+
+function update_value_on_text_focusout(element, id, set_function_name) {
+    /* This function is called when the user focuses out
+    of the input field. */
+
+    if (element.value == "") {
+        element.value = 0;
+        update_value_on_text_input(id, element.value, set_function_name);
+    }
 }
 
 function update_display_on_value_change(value, set_function_name) {
@@ -121,9 +126,6 @@ function update_display_on_value_change(value, set_function_name) {
     the settings change, and it updates the preview design. */
 
     element = $("#timer-container");
-    console.log(`${set_function_name}(element, value)`);
-    console.log(set_function_name);
-
     eval(`${set_function_name}(element, value)`);
 }
 
