@@ -78,13 +78,14 @@
     }
 }
 
-@media screen and (orientation: portrait) {
+@media screen and (max-width: 768px) {
     #about {
         #clock {
             display: none;
         }
 
         #text-container {
+            text-align: center;
             width: 75%;
         }
     }

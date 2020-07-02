@@ -435,11 +435,12 @@ This popup appears the first time the user visits the website! */
   }
 }
 
-@media screen and (orientation: portrait) {
+@media screen and (max-width: 768px) {
   #about #clock {
     display: none;
   }
   #about #text-container {
+    text-align: center;
     width: 75%;
   }
 }
