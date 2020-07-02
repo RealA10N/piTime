@@ -1,7 +1,13 @@
+$small-media-q: 992px;
+
 #banner {
     background: $main-gradient;
     color: $light-color;
     height: $banner-section-height;
+
+    @media only screen and (max-width: $small-media-q) {
+        text-align: center;
+    }
 
     #lang-selector {
         position: absolute;
@@ -63,9 +69,7 @@
     }
 
     #banner-text {
-        position: absolute;
-        width: 100%;
-        height: $banner-section-height;
+        position: relative;
 
         @include center;
 
@@ -75,6 +79,11 @@
             font-family: Typo Grotesk Rounded;
             font-size: 200px;
             font-weight: normal;
+
+            @media only screen and (max-width: $small-media-q) {
+                font-size: 20vw;
+                margin-bottom: 15px;
+            }
         }
 
         hr {
@@ -82,10 +91,34 @@
             height: 1px;
             margin: 10px 0 10px;
             background: rgba(255, 255, 255, 0.5);
+
+            @media only screen and (max-width: $small-media-q) {
+                display: none;
+            }
+        }
+
+        #banner-text-container {
+            @media only screen and (max-width: $small-media-q) {
+                @include center;
+                flex-direction: column;
+                position: relative;
+                width: 100%;
+            }
+        }
+
+        #description {
+            @media only screen and (max-width: $small-media-q) {
+                width: 90%;
+            }
         }
 
         #design-btn {
             top: $regular-text-size * 1.5;
+
+            @media only screen and (max-width: $small-media-q) {
+                position: relative;
+                top: 30px;
+            }
         }
     }
 

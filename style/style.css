@@ -114,6 +114,11 @@ This popup appears the first time the user visits the website! */
   padding: 30px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+
+@media only screen and (max-width: 992px) {
+  #select-lang-popup #popup-background {
+    width: 60%;
+  }
 }
 
 #select-lang-popup #popup-background #content {
@@ -151,6 +156,12 @@ This popup appears the first time the user visits the website! */
   background: linear-gradient(25deg, #54ed25 0%, #eaf005 100%);
   color: #ffffff;
   height: 100vh;
+}
+
+@media only screen and (max-width: 992px) {
+  #banner {
+    text-align: center;
+  }
 }
 
 #banner #lang-selector {
@@ -217,9 +228,7 @@ This popup appears the first time the user visits the website! */
 }
 
 #banner #banner-text {
-  position: absolute;
-  width: 100%;
-  height: 100vh;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -239,6 +248,13 @@ This popup appears the first time the user visits the website! */
   font-weight: normal;
 }
 
+@media only screen and (max-width: 992px) {
+  #banner #banner-text #piTime-text {
+    font-size: 20vw;
+    margin-bottom: 15px;
+  }
+}
+
 #banner #banner-text hr {
   border: 0;
   height: 1px;
@@ -246,8 +262,47 @@ This popup appears the first time the user visits the website! */
   background: rgba(255, 255, 255, 0.5);
 }
 
+@media only screen and (max-width: 992px) {
+  #banner #banner-text hr {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  #banner #banner-text #banner-text-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  #banner #banner-text #description {
+    width: 90%;
+  }
+}
+
 #banner #banner-text #design-btn {
   top: 30px;
+}
+
+@media only screen and (max-width: 992px) {
+  #banner #banner-text #design-btn {
+    position: relative;
+    top: 30px;
+  }
 }
 
 #banner #hourglass-logo {
