@@ -105,15 +105,16 @@ This popup appears the first time the user visits the website! */
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  width: 30%;
+  width: 500px;
   height: auto;
   background-color: #ffffff;
   -webkit-box-shadow: 15px 15px 30px rgba(48, 48, 48, 0.5);
           box-shadow: 15px 15px 30px rgba(48, 48, 48, 0.5);
   border-radius: 15px;
   padding: 30px;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
 
 @media only screen and (max-width: 992px) {
   #select-lang-popup #popup-background {
