@@ -21,8 +21,12 @@ This popup appears the first time the user visits the website! */
         left: 50%;
         transform: translate(-50%, -50%);
 
-        width: 30%;
+        width: 500px;
         height: auto;
+
+        @media only screen and (max-width: 992px) {
+            width: 60%;
+        }
 
         background-color: $light-color;
         box-shadow: 15px 15px 30px rgba($dark-color, 0.5);
@@ -30,7 +34,7 @@ This popup appears the first time the user visits the website! */
 
         padding: 30px;
 
-        transition: 0.5s;
+        transition: 0.5s ease-in-out;
 
         #content {
             text-align: center;
