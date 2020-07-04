@@ -13,9 +13,14 @@
     "about:design-button": "Design your own!",
 
     "design:title": "Start Designing",
+    "design:steps:config:short-title": "Configure",
+    "design:steps:design:short-title": "Design",
+    "design:steps:apply:short-title": "Apply",
+
     "design:mode-selector:countdown": "Countdown",
+    "design:mode-selector:countdown-description": "Count down a fixed time like <strong>10 minutes, an hour, or a predetermined date and time.</strong> This mode can be used to count down until a <strong>special video game announcement, the end of a 24-hour livestream, and more!</strong>",
     "design:mode-selector:countup": "Countup",
-    "design:mode-selector:current-time": "Current time",
+    "design:mode-selector:countup-description": "Start counting up from zero. Set an end date like <strong>10 minutes, an hour, 24 hours, or keep counting forever!</strong> This mode can be used to <strong>show your viewers how long ago you started the livestream, measuring time for various challenges, and more!</strong>",
 
     "design:preview:title": "Preview",
 

@@ -1,0 +1,86 @@
+/* The design of the first step in the design procces of
+the timer. In this step the user selects the timer mode,
+and the goal date / time. */
+
+#steps-container {
+    width: 70%;
+}
+
+#design > #steps-container > #configure-step-container {
+    #mode-selector {
+        display: grid;
+        grid-auto-columns: 1fr;
+
+        grid-template: "countdown countup";
+        grid-gap: 50px;
+
+        * {
+            transition: 0.2s ease-in-out;
+        }
+
+        .mode-btn {
+            @include center;
+            flex-direction: column;
+
+            border-radius: 25px;
+            padding: 35px;
+            background-color: $light-transperent-bg-color;
+
+            text-align: center;
+            cursor: pointer;
+
+            h2 {
+                padding-bottom: 10px;
+            }
+
+            &:hover {
+                h2 {
+                    letter-spacing: 5px;
+                }
+
+                background: $heavy-transperent-bg-color;
+                transform: scale(1.05);
+            }
+        }
+
+        .selected-mode-btn {
+            p {
+                display: none;
+            }
+        }
+
+        @media only screen and (max-width: 992px) {
+            grid-template: "countdown" "countup";
+            grid-auto-rows: 1fr;
+        }
+
+        input[type="radio"] {
+            display: none;
+        }
+
+        input[type="radio"]:checked {
+            & + label {
+                /* Selected mode design */
+                background: $main-gradient;
+                color: $dark-color;
+                box-shadow: 15px 15px 30px rgba(black, 0.5);
+            }
+        }
+
+        #countdown-btn {
+            grid-area: countdown;
+        }
+
+        #countup-btn {
+            grid-area: countup;
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    #mode-selector {
+        grid-template:
+            "countdown"
+            "countup";
+    }
+}

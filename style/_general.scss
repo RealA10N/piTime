@@ -6,9 +6,8 @@ $main-gradient: linear-gradient(25deg, $main-color 0%, $accent-color 100%);
 $light-color: #ffffff;
 $dark-color: #303030;
 
-$preview-panel-background: rgba(0, 0, 0, 0.3);
-$settings-panel-background: rgba(0, 0, 0, 0.5);
-$buttons-panel-background: rgba(0, 0, 0, 0.8);
+$light-transperent-bg-color: rgba(0, 0, 0, 0.4);
+$heavy-transperent-bg-color: rgba(0, 0, 0, 0.7);
 
 $banner-section-height: 100vh;
 $about-section-height: 75vh;
@@ -82,6 +81,21 @@ button {
 
     color: $dark-color;
     border-color: $dark-color;
+}
+
+.color-btn {
+    @extend .light-btn;
+
+    color: $dark-color;
+    background: $main-gradient;
+
+    font-weight: bold;
+    border: none;
+
+    &:hover {
+        background: $main-gradient;
+        box-shadow: inset 5px 5px 15px 0px rgba(0, 0, 0, 0.35);
+    }
 }
 
 // - - - Scrollbar - - - //

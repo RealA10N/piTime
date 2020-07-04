@@ -1,0 +1,123 @@
+/* The design of the progress bar in the design
+section of the website. */
+
+$inactive-color: $light-color;
+$active-color: $main-gradient;
+
+#design-header {
+    @include center;
+    flex-direction: column;
+
+    position: absolute;
+    top: 0;
+
+    margin-top: 2.5vh;
+}
+
+#design > #design-header > #progress-bar {
+    /* The whole progress bar design */
+
+    position: relative;
+    width: 200px;
+
+    background-color: transparent;
+
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+
+    .step-btn {
+        /* Design of each "cell" in the progress bar. */
+
+        display: inline-flex;
+
+        flex-direction: column;
+        align-items: center;
+
+        width: 0;
+
+        .icon {
+            /* Center the icon inside the cirlce */
+            @include center;
+
+            /* Design of the circle border around the icon */
+
+            color: $inactive-color;
+
+            border: 2px solid $inactive-color;
+            border-radius: 50%;
+
+            padding: 15px;
+
+            width: 15px;
+            height: 15px;
+
+            &::before {
+                /* Support for Font Awesone icons
+                in the progress bar */
+                font-family: "Font Awesome 5 Free";
+                font-weight: 900;
+            }
+        }
+
+        &.active .icon {
+            /* Design of an active item in the progress bar */
+            border: 2px solid $dark-color;
+            color: $dark-color;
+            background: $active-color;
+
+            transform: scale(1.15);
+        }
+
+        p {
+            /* The design of the title of each step */
+
+            margin: 10px;
+            font-size: 14px;
+            opacity: 0.6;
+        }
+
+        * {
+            /* Transition animation length on hover */
+            transition: 0.2s ease-in-out;
+        }
+
+        &:hover {
+            /* Animation on hover above each icon!
+            Small scale animation and change color (opacity)
+            of the step title. */
+
+            $scale: scale(1.15);
+
+            p {
+                opacity: 1;
+                transform: translateY(-5px) $scale;
+            }
+
+            .icon {
+                border: 2px solid $dark-color;
+                transform: $scale;
+            }
+        }
+    }
+
+    /* The icons of each step in the progress bar */
+
+    #config-step {
+        .icon::before {
+            content: "\f0ad"; // The settings icon
+        }
+    }
+
+    #design-step {
+        .icon::before {
+            content: "\f5aa"; // The design icon
+        }
+    }
+
+    #apply-step {
+        .icon::before {
+            content: "\f135"; // The design icon
+        }
+    }
+}

@@ -39,7 +39,7 @@ button {
   font-size: 20px;
 }
 
-.light-btn, .dark-btn {
+.light-btn, .dark-btn, .color-btn {
   color: #ffffff;
   background: transparent;
   border: 1.5px solid #ffffff;
@@ -55,7 +55,7 @@ button {
   top: 20px;
 }
 
-.light-btn:hover, .dark-btn:hover {
+.light-btn:hover, .dark-btn:hover, .color-btn:hover {
   background: rgba(255, 255, 255, 0.1);
   -webkit-box-shadow: inset 5px 5px 5px 0px rgba(0, 0, 0, 0.1);
           box-shadow: inset 5px 5px 5px 0px rgba(0, 0, 0, 0.1);
@@ -64,6 +64,19 @@ button {
 .dark-btn {
   color: #303030;
   border-color: #303030;
+}
+
+.color-btn {
+  color: #303030;
+  background: linear-gradient(25deg, #54ed25 0%, #eaf005 100%);
+  font-weight: bold;
+  border: none;
+}
+
+.color-btn:hover {
+  background: linear-gradient(25deg, #54ed25 0%, #eaf005 100%);
+  -webkit-box-shadow: inset 5px 5px 15px 0px rgba(0, 0, 0, 0.35);
+          box-shadow: inset 5px 5px 15px 0px rgba(0, 0, 0, 0.35);
 }
 
 body {
@@ -577,7 +590,7 @@ This popup appears the first time the user visits the website! */
   grid-area: preview;
   width: 100%;
   height: 70vh;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.4);
   direction: ltr;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -639,8 +652,8 @@ This popup appears the first time the user visits the website! */
   -ms-grid-column: 2;
   grid-area: settings;
   width: 100%;
-  height: 60vh;
-  background-color: rgba(0, 0, 0, 0.5);
+  height: 70vh;
+  background-color: rgba(0, 0, 0, 0.7);
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -763,25 +776,6 @@ This popup appears the first time the user visits the website! */
   font-size: 15px;
 }
 
-#design #panel #set-time {
-  -ms-grid-row: 3;
-  -ms-grid-column: 2;
-  grid-area: settime;
-  height: 10vh;
-  width: auto;
-  margin-top: -30px;
-  background-color: rgba(0, 0, 0, 0.8);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 #design #watermarks {
   font-size: 50vh;
   opacity: 0.05;
@@ -882,5 +876,227 @@ This popup appears the first time the user visits the website! */
 
 #timer-wrapper {
   overflow: hidden;
+}
+
+/* The design of the progress bar in the design
+section of the website. */
+#design-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  top: 0;
+  margin-top: 2.5vh;
+}
+
+#design > #design-header > #progress-bar {
+  /* The whole progress bar design */
+  position: relative;
+  width: 200px;
+  background-color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  cursor: pointer;
+  /* The icons of each step in the progress bar */
+}
+
+#design > #design-header > #progress-bar .step-btn {
+  /* Design of each "cell" in the progress bar. */
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 0;
+}
+
+#design > #design-header > #progress-bar .step-btn .icon {
+  /* Center the icon inside the cirlce */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /* Design of the circle border around the icon */
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  padding: 15px;
+  width: 15px;
+  height: 15px;
+}
+
+#design > #design-header > #progress-bar .step-btn .icon::before {
+  /* Support for Font Awesone icons
+                in the progress bar */
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+#design > #design-header > #progress-bar .step-btn.active .icon {
+  /* Design of an active item in the progress bar */
+  border: 2px solid #303030;
+  color: #303030;
+  background: linear-gradient(25deg, #54ed25 0%, #eaf005 100%);
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+}
+
+#design > #design-header > #progress-bar .step-btn p {
+  /* The design of the title of each step */
+  margin: 10px;
+  font-size: 14px;
+  opacity: 0.6;
+}
+
+#design > #design-header > #progress-bar .step-btn * {
+  /* Transition animation length on hover */
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+#design > #design-header > #progress-bar .step-btn:hover {
+  /* Animation on hover above each icon!
+            Small scale animation and change color (opacity)
+            of the step title. */
+}
+
+#design > #design-header > #progress-bar .step-btn:hover p {
+  opacity: 1;
+  -webkit-transform: translateY(-5px) scale(1.15);
+          transform: translateY(-5px) scale(1.15);
+}
+
+#design > #design-header > #progress-bar .step-btn:hover .icon {
+  border: 2px solid #303030;
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+}
+
+#design > #design-header > #progress-bar #config-step .icon::before {
+  content: "\f0ad";
+}
+
+#design > #design-header > #progress-bar #design-step .icon::before {
+  content: "\f5aa";
+}
+
+#design > #design-header > #progress-bar #apply-step .icon::before {
+  content: "\f135";
+}
+
+/* The design of the first step in the design procces of
+the timer. In this step the user selects the timer mode,
+and the goal date / time. */
+#steps-container {
+  width: 70%;
+}
+
+#design > #steps-container > #configure-step-container #mode-selector {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template: "countdown countup";
+  grid-gap: 50px;
+}
+
+#design > #steps-container > #configure-step-container #mode-selector * {
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+#design > #steps-container > #configure-step-container #mode-selector .mode-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 25px;
+  padding: 35px;
+  background-color: rgba(0, 0, 0, 0.4);
+  text-align: center;
+  cursor: pointer;
+}
+
+#design > #steps-container > #configure-step-container #mode-selector .mode-btn h2 {
+  padding-bottom: 10px;
+}
+
+#design > #steps-container > #configure-step-container #mode-selector .mode-btn:hover {
+  background: rgba(0, 0, 0, 0.7);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+#design > #steps-container > #configure-step-container #mode-selector .mode-btn:hover h2 {
+  letter-spacing: 5px;
+}
+
+#design > #steps-container > #configure-step-container #mode-selector .selected-mode-btn p {
+  display: none;
+}
+
+@media only screen and (max-width: 992px) {
+  #design > #steps-container > #configure-step-container #mode-selector {
+    grid-template: "countdown" "countup";
+    grid-auto-rows: 1fr;
+  }
+}
+
+#design > #steps-container > #configure-step-container #mode-selector input[type="radio"] {
+  display: none;
+}
+
+#design > #steps-container > #configure-step-container #mode-selector input[type="radio"]:checked + label {
+  /* Selected mode design */
+  background: linear-gradient(25deg, #54ed25 0%, #eaf005 100%);
+  color: #303030;
+  -webkit-box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.5);
+          box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.5);
+}
+
+#design > #steps-container > #configure-step-container #mode-selector #countdown-btn {
+  grid-area: countdown;
+}
+
+#design > #steps-container > #configure-step-container #mode-selector #countup-btn {
+  grid-area: countup;
+}
+
+@media only screen and (max-width: 992px) {
+  #mode-selector {
+    grid-template: "countdown" "countup";
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -46,6 +46,8 @@
         <script src="settings/display_settings.js" defer></script>
         <script src="js/load_settings.js" defer></script>
         <script src="js/load_i18n.js" defer></script>
+
+        <script src="js/design_progress_bar.js" defer></script>
     </head>
 
     <body>
@@ -110,46 +112,78 @@
                 <i class="fas fa-cut" id="cut-watermark"></i>
             </div>
 
-            <h1 data-i18n="design:title"></h1>
+            <div id="design-header">
+                <h1 data-i18n="design:title"></h1>
 
-            <div id="panel">
-                <div id="mode-selector">
-                    <a
-                        data-i18n="design:mode-selector:countdown"
-                        onclick="select_mode_countdown(this)"
-                    ></a>
-                    <a
-                        data-i18n="design:mode-selector:countup"
-                        onclick="select_mode_countup(this)"
-                    ></a>
-                    <a
-                        data-i18n="design:mode-selector:current-time"
-                        onclick="select_mode_curtime(this)"
-                    ></a>
-                </div>
-
-                <div id="preview">
-                    <div id="timer-wrapper">
-                        <div id="timer-container">
-                            <span id="days"></span>
-                            :
-                            <span id="hours"></span>
-                            :
-                            <span id="minutes"></span>
-                            :
-                            <span id="seconds"></span>
-                        </div>
+                <div id="progress-bar" class="progress-bar">
+                    <div
+                        id="config-step"
+                        class="step-btn active"
+                        onclick="progress_bar__moveToSection(this)"
+                    >
+                        <span class="icon"></span>
+                        <p
+                            class="step-title"
+                            data-i18n="design:steps:config:short-title"
+                        ></p>
                     </div>
-
-                    <h2 data-i18n="design:preview:title"></h2>
+                    <div
+                        id="design-step"
+                        class="step-btn"
+                        onclick="progress_bar__moveToSection(this)"
+                    >
+                        <span class="icon"></span>
+                        <p
+                            class="step-title"
+                            data-i18n="design:steps:design:short-title"
+                        ></p>
+                    </div>
+                    <div
+                        id="apply-step"
+                        class="step-btn"
+                        onclick="progress_bar__moveToSection(this)"
+                    >
+                        <span class="icon"></span>
+                        <p
+                            class="step-title"
+                            data-i18n="design:steps:apply:short-title"
+                        ></p>
+                    </div>
                 </div>
-                <div id="settings">
-                    <h2 data-i18n="design:settings:title"></h2>
-                    <!-- other elements are added using the load_setting.js script-->
-                </div>
+            </div>
 
-                <div id="set-time">
-                    <h2>Buttons panel</h2>
+            <div id="steps-container">
+                <div id="configure-step-container">
+                    <div id="mode-selector">
+                        <input
+                            type="radio"
+                            name="mode"
+                            id="countdown-radio"
+                            onclick="__config_select_countdown()"
+                        />
+                        <label
+                            for="countdown-radio"
+                            id="countdown-btn"
+                            class="mode-btn"
+                        >
+                            <h2 data-i18n="design:mode-selector:countdown"></h2>
+                            <p
+                                data-i18n="[html]design:mode-selector:countdown-description"
+                            ></p>
+                        </label>
+                        <input type="radio" name="mode" id="countup-radio" />
+                        <label
+                            for="countup-radio"
+                            id="countup-btn"
+                            class="mode-btn"
+                            onclick="__config_select_countup()"
+                        >
+                            <h2 data-i18n="design:mode-selector:countup"></h2>
+                            <p
+                                data-i18n="[html]design:mode-selector:countup-description"
+                            ></p>
+                        </label>
+                    </div>
                 </div>
             </div>
         </div>

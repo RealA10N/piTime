@@ -13,9 +13,14 @@
     "about:design-button": "עצב בעצמך!",
 
     "design:title": "התחל לעצב",
+    "design:steps:config:short-title": "הגדרות",
+    "design:steps:design:short-title": "עיצוב",
+    "design:steps:apply:short-title": "סיום",
+
     "design:mode-selector:countdown": "ספירה לאחור",
+    "design:mode-selector:countdown-description": "ספור לאחור זמן קבוע כמו<strong> 10 דקות, שעה, או עד תאריך ושעה קבועים מראש.</strong> מצב זה יכול לשמש כדי לספור זמן עד <strong>להכרזה של משחק, עד לסיום לייב 24 שעות, ועוד!</strong>",
     "design:mode-selector:countup": "ספירה קדימה",
-    "design:mode-selector:current-time": "שעון נוכחי",
+    "design:mode-selector:countup-description": "התחל את הספירה מאפס וספור מעלה. הגדר מועד סיום כמו <strong>10 דקות, שעה, 24 שעות, או המשך לספור עד אינסוף!</strong> מצב זה יכול לשמש כדי להראות לצופים <strong>לפני כמה זמן התחלת את הלייב, מדידת זמן לאתגרים שונים ועוד!</strong>",
 
     "design:preview:title": "תצוגה מקדימה",
 
