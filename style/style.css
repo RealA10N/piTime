@@ -441,6 +441,7 @@ This popup appears the first time the user visits the website! */
 
 #about #text-container {
   width: 30%;
+  z-index: 2;
 }
 
 #about #text-container p {
