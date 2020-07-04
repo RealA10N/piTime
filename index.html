@@ -188,15 +188,73 @@
                             id="countdown-settings"
                             class="panel timer-settings"
                         >
-                            <h2
-                                data-i18n="design:config:settings:countdown-settings-title"
-                            ></h2>
+                            <div id="countdown-settings-header">
+                                <h2
+                                    data-i18n="design:config:settings:countdown-settings-title"
+                                ></h2>
+                                <h3
+                                    data-i18n="design:config:settings:select-options-below"
+                                ></h3>
+                            </div>
+
+                            <input
+                                type="radio"
+                                name="countdown-goal-type"
+                                id="countdown:to-fixed-date"
+                            />
+                            <label
+                                for="countdown:to-fixed-date"
+                                data-i18n="design:config:settings:countdown-to-fixed-date"
+                            ></label>
+                            <input
+                                type="radio"
+                                name="countdown-goal-type"
+                                id="countdown:a-fixed-duration"
+                            />
+                            <label
+                                for="countdown:a-fixed-duration"
+                                data-i18n="design:config:settings:countdown-a-fixed-duration"
+                            ></label>
+
+                            <input
+                                type="radio"
+                                name="countdown-goal-type"
+                                id="countdown:to-every"
+                            />
+                            <label
+                                for="countdown:to-every"
+                                data-i18n="design:config:settings:countdown-to-every"
+                            ></label>
                         </div>
 
                         <div id="countup-settings" class="panel timer-settings">
-                            <h2
-                                data-i18n="design:config:settings:countup-settings-title"
-                            ></h2>
+                            <div id="countdown-settings-header">
+                                <h2
+                                    data-i18n="design:config:settings:countup-settings-title"
+                                ></h2>
+                                <h3
+                                    data-i18n="design:config:settings:select-options-below"
+                                ></h3>
+                            </div>
+
+                            <input
+                                type="radio"
+                                name="countup-goal-type"
+                                id="countup:to-infinity"
+                            />
+                            <label
+                                for="countup:to-infinity"
+                                data-i18n="design:config:settings:countup-to-infinity"
+                            ></label>
+                            <input
+                                type="radio"
+                                name="countup-goal-type"
+                                id="countup:a-fixed-duration"
+                            />
+                            <label
+                                for="countup:a-fixed-duration"
+                                data-i18n="design:config:settings:countup-a-fixed-duration"
+                            ></label>
                         </div>
                     </div>
                 </div>

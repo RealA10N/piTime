@@ -53,11 +53,11 @@ and the goal date / time. */
             grid-auto-rows: 1fr;
         }
 
-        input[type="radio"] {
+        & > input[type="radio"] {
             display: none;
         }
 
-        input[type="radio"]:checked {
+        & > input[type="radio"]:checked {
             & + label {
                 /* Selected mode design */
                 background: $main-gradient;

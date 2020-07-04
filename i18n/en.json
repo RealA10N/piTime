@@ -24,6 +24,14 @@
 
     "design:config:settings:countdown-settings-title": "Countdown settings",
     "design:config:settings:countup-settings-title": "Countup settings",
+    "design:config:settings:select-options-below": "Select one of the options below",
+
+    "design:config:settings:countdown-to-fixed-date": "Countdown to a fixed date",
+    "design:config:settings:countdown-a-fixed-duration": "Countdown a fixed duration",
+    "design:config:settings:countdown-to-every": "Countdown to (...) every (day/week/month)",
+
+    "design:config:settings:countup-to-infinity": "Countup to infinity",
+    "design:config:settings:countup-a-fixed-duration": "Countup a fixed duration",
 
     "design:preview:title": "Preview",
 

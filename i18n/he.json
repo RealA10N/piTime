@@ -24,6 +24,14 @@
 
     "design:config:settings:countdown-settings-title": "הגדרות ספירה לאחור",
     "design:config:settings:countup-settings-title": "הגדרות ספירה קדימה",
+    "design:config:settings:select-options-below": "בחר את אחת מהאפשרויות מטה",
+
+    "design:config:settings:countdown-to-fixed-date": "ספור לאחור עד לתאריך מסוים",
+    "design:config:settings:countdown-a-fixed-duration": "ספור לאחור משך זמן מסוים",
+    "design:config:settings:countdown-to-every": "ספור לאחור עד (...) כל (יום/שבוע/חודש)",
+
+    "design:config:settings:countup-to-infinity": "ספור קדימה עד אינסוף",
+    "design:config:settings:countup-a-fixed-duration": "ספור קדימה משך זמן מסוים",
 
     "design:preview:title": "תצוגה מקדימה",
 

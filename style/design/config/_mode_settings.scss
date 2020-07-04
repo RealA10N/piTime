@@ -3,8 +3,48 @@
         grid-area: settings;
         display: none; // hidden by deafult, before the user selects the mode.
 
+        z-index: 2;
         margin-top: 20px;
 
         background-color: $heavy-transperent-bg-color;
+
+        input[type="radio"] {
+            display: none;
+
+            &:checked {
+                & + label {
+                    background: $main-gradient;
+                    color: $dark-color;
+
+                    cursor: default;
+                }
+            }
+
+            & + label {
+                display: block;
+                cursor: pointer;
+
+                border-radius: 10px;
+                padding: 10px;
+
+                border: 2px solid rgba($light-color, 0.1);
+                margin: 10px;
+            }
+        }
+
+        h3 {
+            font-size: 18px;
+            opacity: 0.5;
+        }
+
+        button {
+            position: initial;
+            border-radius: 10px;
+            padding: 10px;
+
+            &::after {
+                content: " >>";
+            }
+        }
     }
 }

@@ -61,6 +61,10 @@ button {
           box-shadow: inset 5px 5px 5px 0px rgba(0, 0, 0, 0.1);
 }
 
+.light-btn:disabled, .dark-btn:disabled, .color-btn:disabled {
+  opacity: 0.5;
+}
+
 .dark-btn {
   color: #303030;
   border-color: #303030;
@@ -1081,11 +1085,11 @@ and the goal date / time. */
   }
 }
 
-#design > #steps-container > #configure-step-container #mode-selector input[type="radio"] {
+#design > #steps-container > #configure-step-container #mode-selector > input[type="radio"] {
   display: none;
 }
 
-#design > #steps-container > #configure-step-container #mode-selector input[type="radio"]:checked + label {
+#design > #steps-container > #configure-step-container #mode-selector > input[type="radio"]:checked + label {
   /* Selected mode design */
   background: linear-gradient(25deg, #54ed25 0%, #eaf005 100%);
   color: #303030;
@@ -1131,7 +1135,42 @@ and the goal date / time. */
   -ms-grid-column: 2;
   grid-area: settings;
   display: none;
+  z-index: 2;
   margin-top: 20px;
   background-color: rgba(0, 0, 0, 0.7);
+}
+
+#design > #steps-container > #configure-step-container > #mode-selector .timer-settings input[type="radio"] {
+  display: none;
+}
+
+#design > #steps-container > #configure-step-container > #mode-selector .timer-settings input[type="radio"]:checked + label {
+  background: linear-gradient(25deg, #54ed25 0%, #eaf005 100%);
+  color: #303030;
+  cursor: default;
+}
+
+#design > #steps-container > #configure-step-container > #mode-selector .timer-settings input[type="radio"] + label {
+  display: block;
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  margin: 10px;
+}
+
+#design > #steps-container > #configure-step-container > #mode-selector .timer-settings h3 {
+  font-size: 18px;
+  opacity: 0.5;
+}
+
+#design > #steps-container > #configure-step-container > #mode-selector .timer-settings button {
+  position: initial;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+#design > #steps-container > #configure-step-container > #mode-selector .timer-settings button::after {
+  content: " >>";
 }
 /*# sourceMappingURL=style.css.map */
