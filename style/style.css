@@ -1014,6 +1014,10 @@ section of the website. */
   content: "\f135";
 }
 
+#design > #steps-container {
+  margin-top: 180px;
+}
+
 #design .panel {
   /* Design of every panel in the settings! */
   border-radius: 25px;
