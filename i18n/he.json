@@ -22,6 +22,9 @@
     "design:mode-selector:countup": "ספירה קדימה",
     "design:mode-selector:countup-description": "התחל את הספירה מאפס וספור מעלה. הגדר מועד סיום כמו <strong>10 דקות, שעה, 24 שעות, או המשך לספור עד אינסוף!</strong> מצב זה יכול לשמש כדי להראות לצופים <strong>לפני כמה זמן התחלת את הלייב, מדידת זמן לאתגרים שונים ועוד!</strong>",
 
+    "design:config:settings:countdown-settings-title": "הגדרות ספירה לאחור",
+    "design:config:settings:countup-settings-title": "הגדרות ספירה קדימה",
+
     "design:preview:title": "תצוגה מקדימה",
 
     "design:settings:title": "הגדרות",

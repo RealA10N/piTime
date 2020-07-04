@@ -1,0 +1,10 @@
+#design > #steps-container > #configure-step-container > #mode-selector {
+    .timer-settings {
+        grid-area: settings;
+        display: none; // hidden by deafult, before the user selects the mode.
+
+        margin-top: 20px;
+
+        background-color: $heavy-transperent-bg-color;
+    }
+}

@@ -22,6 +22,9 @@
     "design:mode-selector:countup": "Countup",
     "design:mode-selector:countup-description": "Start counting up from zero. Set an end date like <strong>10 minutes, an hour, 24 hours, or keep counting forever!</strong> This mode can be used to <strong>show your viewers how long ago you started the livestream, measuring time for various challenges, and more!</strong>",
 
+    "design:config:settings:countdown-settings-title": "Countdown settings",
+    "design:config:settings:countup-settings-title": "Countup settings",
+
     "design:preview:title": "Preview",
 
     "design:settings:title": "Settings",

@@ -164,7 +164,7 @@
                         <label
                             for="countdown-radio"
                             id="countdown-btn"
-                            class="mode-btn"
+                            class="panel mode-btn"
                         >
                             <h2 data-i18n="design:mode-selector:countdown"></h2>
                             <p
@@ -175,7 +175,7 @@
                         <label
                             for="countup-radio"
                             id="countup-btn"
-                            class="mode-btn"
+                            class="panel mode-btn"
                             onclick="__config_select_countup()"
                         >
                             <h2 data-i18n="design:mode-selector:countup"></h2>
@@ -183,6 +183,21 @@
                                 data-i18n="[html]design:mode-selector:countup-description"
                             ></p>
                         </label>
+
+                        <div
+                            id="countdown-settings"
+                            class="panel timer-settings"
+                        >
+                            <h2
+                                data-i18n="design:config:settings:countdown-settings-title"
+                            ></h2>
+                        </div>
+
+                        <div id="countup-settings" class="panel timer-settings">
+                            <h2
+                                data-i18n="design:config:settings:countup-settings-title"
+                            ></h2>
+                        </div>
                     </div>
                 </div>
             </div>

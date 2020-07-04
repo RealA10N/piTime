@@ -993,6 +993,7 @@ section of the website. */
 
 #design > #design-header > #progress-bar .step-btn:hover .icon {
   border: 2px solid #303030;
+  background-color: #303030;
   -webkit-transform: scale(1.15);
           transform: scale(1.15);
 }
@@ -1009,6 +1010,14 @@ section of the website. */
   content: "\f135";
 }
 
+#design .panel {
+  /* Design of every panel in the settings! */
+  border-radius: 25px;
+  padding: 35px;
+  background-color: rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
 /* The design of the first step in the design procces of
 the timer. In this step the user selects the timer mode,
 and the goal date / time. */
@@ -1020,8 +1029,8 @@ and the goal date / time. */
   display: -ms-grid;
   display: grid;
   grid-auto-columns: 1fr;
-  grid-template: "countdown countup";
-  grid-gap: 50px;
+  grid-template: "countdown countup" "settings settings";
+  grid-gap: 30px;
 }
 
 #design > #steps-container > #configure-step-container #mode-selector * {
@@ -1043,10 +1052,6 @@ and the goal date / time. */
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border-radius: 25px;
-  padding: 35px;
-  background-color: rgba(0, 0, 0, 0.4);
-  text-align: center;
   cursor: pointer;
   z-index: 2;
 }
@@ -1071,7 +1076,7 @@ and the goal date / time. */
 
 @media only screen and (max-width: 992px) {
   #design > #steps-container > #configure-step-container #mode-selector {
-    grid-template: "countdown" "countup";
+    grid-template: "countdown" "countup" "settings";
     grid-auto-rows: 1fr;
   }
 }
@@ -1098,7 +1103,7 @@ and the goal date / time. */
 
 @media only screen and (max-width: 992px) {
   #design > #steps-container > #configure-step-container #mode-selector {
-    grid-template: "countdown" "countup";
+    grid-template: "countdown" "countup" "settings";
     grid-gap: 25px;
   }
   #design > #steps-container > #configure-step-container #mode-selector .mode-btn p {
@@ -1119,5 +1124,14 @@ and the goal date / time. */
   #design > #steps-container > #configure-step-container #mode-selector .selected-mode-btn h2 {
     padding: 0;
   }
+}
+
+#design > #steps-container > #configure-step-container > #mode-selector .timer-settings {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: settings;
+  display: none;
+  margin-top: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
 }
 /*# sourceMappingURL=style.css.map */

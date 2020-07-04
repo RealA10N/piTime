@@ -11,8 +11,10 @@ and the goal date / time. */
         display: grid;
         grid-auto-columns: 1fr;
 
-        grid-template: "countdown countup";
-        grid-gap: 50px;
+        grid-template:
+            "countdown countup"
+            "settings settings";
+        grid-gap: 30px;
 
         * {
             transition: 0.2s ease-in-out;
@@ -22,11 +24,6 @@ and the goal date / time. */
             @include center;
             flex-direction: column;
 
-            border-radius: 25px;
-            padding: 35px;
-            background-color: $light-transperent-bg-color;
-
-            text-align: center;
             cursor: pointer;
 
             z-index: 2;
@@ -52,7 +49,7 @@ and the goal date / time. */
         }
 
         @media only screen and (max-width: 992px) {
-            grid-template: "countdown" "countup";
+            grid-template: "countdown" "countup" "settings";
             grid-auto-rows: 1fr;
         }
 
@@ -82,7 +79,8 @@ and the goal date / time. */
         #mode-selector {
             grid-template:
                 "countdown"
-                "countup";
+                "countup"
+                "settings";
 
             grid-gap: 25px;
 

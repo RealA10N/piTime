@@ -96,6 +96,7 @@ $active-color: $main-gradient;
 
             .icon {
                 border: 2px solid $dark-color;
+                background-color: $dark-color;
                 transform: $scale;
             }
         }
