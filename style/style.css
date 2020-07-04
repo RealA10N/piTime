@@ -1047,6 +1047,7 @@ and the goal date / time. */
   background-color: rgba(0, 0, 0, 0.4);
   text-align: center;
   cursor: pointer;
+  z-index: 2;
 }
 
 #design > #steps-container > #configure-step-container #mode-selector .mode-btn h2 {
@@ -1101,6 +1102,21 @@ and the goal date / time. */
   }
   #design > #steps-container > #configure-step-container #mode-selector .mode-btn p {
     font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 992px) and (max-width: 600px) {
+  #design > #steps-container > #configure-step-container #mode-selector .mode-btn p {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  #design > #steps-container > #configure-step-container #mode-selector .selected-mode-btn {
+    padding: 15px;
+  }
+  #design > #steps-container > #configure-step-container #mode-selector .selected-mode-btn h2 {
+    padding: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */

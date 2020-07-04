@@ -29,6 +29,8 @@ and the goal date / time. */
             text-align: center;
             cursor: pointer;
 
+            z-index: 2;
+
             h2 {
                 padding-bottom: 10px;
             }
@@ -87,6 +89,20 @@ and the goal date / time. */
             .mode-btn {
                 p {
                     font-size: 14px;
+                }
+
+                @media (max-width: 600px) {
+                    p {
+                        display: none;
+                    }
+                }
+            }
+
+            .selected-mode-btn {
+                padding: 15px;
+
+                h2 {
+                    padding: 0;
                 }
             }
         }
