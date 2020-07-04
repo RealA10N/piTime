@@ -75,12 +75,20 @@ and the goal date / time. */
             grid-area: countup;
         }
     }
-}
 
-@media only screen and (max-width: 992px) {
-    #mode-selector {
-        grid-template:
-            "countdown"
-            "countup";
+    @media only screen and (max-width: 992px) {
+        #mode-selector {
+            grid-template:
+                "countdown"
+                "countup";
+
+            grid-gap: 25px;
+
+            .mode-btn {
+                p {
+                    font-size: 14px;
+                }
+            }
+        }
     }
 }

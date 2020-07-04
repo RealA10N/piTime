@@ -1095,8 +1095,12 @@ and the goal date / time. */
 }
 
 @media only screen and (max-width: 992px) {
-  #mode-selector {
+  #design > #steps-container > #configure-step-container #mode-selector {
     grid-template: "countdown" "countup";
+    grid-gap: 25px;
+  }
+  #design > #steps-container > #configure-step-container #mode-selector .mode-btn p {
+    font-size: 14px;
   }
 }
 /*# sourceMappingURL=style.css.map */
